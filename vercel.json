@@ -1,0 +1,23 @@
+// vercel.json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/server.js", // Onde está sua serverless function
+      "use": "@vercel/node", // Usa o runtime Node.js da Vercel
+      "config": {
+        "includeFiles": ["db.json"] // Inclui o db.json no bundle da função
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)", // Todas as requisições que começam com /api/
+      "dest": "/api/server.js" // Serão roteadas para sua serverless function
+    },
+    {
+      "src": "/(.*)", // Regra para pegar qualquer outra rota
+      "dest": "/api/server.js" // E também rotear para a sua função (se não tiver outros arquivos estáticos)
+    }
+  ]
+}
