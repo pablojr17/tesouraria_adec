@@ -1,4 +1,108 @@
 {
-  "entradas": [],
-  "saidas": []
+  "entradas": [
+    {
+      "id": "8995",
+      "descricao": "saldo anterio",
+      "valor": 14.78,
+      "data": "2025-06-01"
+    },
+    {
+      "id": "8e84",
+      "descricao": "tatiana",
+      "valor": 100,
+      "data": "2025-06-01"
+    },
+    {
+      "id": "9ff4",
+      "descricao": "marlene",
+      "valor": 120,
+      "data": "2025-06-01"
+    },
+    {
+      "id": "2eb8",
+      "descricao": "dc. kailquer",
+      "valor": 410,
+      "data": "2025-06-01"
+    },
+    {
+      "id": "f81a",
+      "descricao": "oferta culto missões",
+      "valor": 45.25,
+      "data": "2025-06-01"
+    },
+    {
+      "id": "6b78",
+      "descricao": "cleonice",
+      "valor": 260,
+      "data": "2025-06-02"
+    },
+    {
+      "id": "e207",
+      "descricao": "marlete",
+      "valor": 570,
+      "data": "2025-06-03"
+    },
+    {
+      "id": "a48e",
+      "descricao": "edinete",
+      "valor": 500,
+      "data": "2025-06-03"
+    },
+    {
+      "id": "0205",
+      "descricao": "ronykleber",
+      "valor": 600,
+      "data": "2025-06-03"
+    },
+    {
+      "id": "792f",
+      "descricao": "isabel serafim",
+      "valor": 400,
+      "data": "2025-06-04"
+    },
+    {
+      "id": "c13e",
+      "descricao": "tereza",
+      "valor": 225,
+      "data": "2025-06-04"
+    },
+    {
+      "id": "ac7f",
+      "descricao": "raiane",
+      "valor": 130,
+      "data": "2025-06-04"
+    },
+    {
+      "id": "a573",
+      "descricao": "joão alves",
+      "valor": 300,
+      "data": "2025-06-04"
+    }
+  ],
+  "saidas": [
+    {
+      "id": "d9aa",
+      "descricao": "oferta culto de missoes",
+      "valor": 45.25,
+      "data": "2025-06-01"
+    },
+    {
+      "id": "8cff",
+      "descricao": "pastor daniel (pix)",
+      "valor": 400,
+      "data": "2025-06-01"
+    },
+    {
+      "id": "d06d",
+      "descricao": "pastor daniel (em mãos)",
+      "valor": 426.95,
+      "data": "2025-06-03"
+    },
+    {
+      "id": "8fde",
+      "descricao": "gasolina pr daniel rio grande",
+      "valor": 40,
+      "data": "2025-06-05"
+    }
+  ]
 }
