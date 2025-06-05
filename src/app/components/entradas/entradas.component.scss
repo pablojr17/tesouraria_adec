@@ -1,0 +1,154 @@
+/* Add this to your component's CSS file (e.g., your-component.component.css) */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the whole content horizontally */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  min-height: 100vh; /* Ensures it takes at least the full viewport height */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-section, .entries-section {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px; /* Space between sections */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+  width: 100%;
+  max-width: 600px; /* Max width for readability */
+  box-sizing: border-box;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: calc(100% - 20px); /* Account for padding */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+button {
+  background-color: #28a745; /* Green button */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Table Styling */
+.entries-table {
+  width: 100%;
+  border-collapse: collapse; /* Removes double borders */
+  margin-top: 20px;
+}
+
+.entries-table th,
+.entries-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.entries-table th {
+  background-color: #f2f2f2;
+  color: #555;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.entries-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping for rows */
+}
+
+.entries-table tbody tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.no-entries {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
+
+/* Add to your existing component's CSS */
+
+/* General table footer styling, reuse from expenses if shared */
+.entries-table tfoot {
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border-top: 2px solid #ccc;
+}
+
+.entries-table tfoot td {
+  padding: 12px;
+  border-top: 1px solid #ddd;
+}
+
+.total-label {
+  text-align: right;
+  padding-right: 15px;
+  color: #333;
+}
+
+.income-value {
+  color: #28a745; /* Green color for income values */
+  font-weight: bold;
+}
+
+.total-value {
+  font-size: 1.1em; /* Make the total value slightly larger */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .input-section, .entries-section {
+    padding: 20px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .entries-table th,
+  .entries-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

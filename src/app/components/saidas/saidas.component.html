@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="input-section">
+    <h2>Saídas</h2>
+
+    <div class="input-group">
+      <input
+        type="text"
+        [(ngModel)]="descricaoSaida"
+        placeholder="Descrição da Saída"
+      />
+    </div>
+
+    <div class="input-group">
+      <input
+        type="number"
+        [(ngModel)]="valorSaida"
+        placeholder="Valor da Saída"
+      />
+    </div>
+
+    <div class="input-group">
+      <input type="date" [(ngModel)]="dataSaida" />
+    </div>
+
+    <button (click)="adicionarSaida()">Adicionar Saída</button>
+  </div>
+
+  <div class="entries-section">
+    <h2>Histórico de Saídas</h2>
+    <table class="entries-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Descrição</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let saida of saidas">
+          <td>{{ saida.data | date : "dd/MM/yyyy" }}</td>
+          <td>{{ saida.descricao.toUpperCase() }}</td>
+          <td class="expense-value">
+            {{ saida.valor | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR" }}
+          </td>
+        </tr>
+        <tr *ngIf="saidas.length === 0">
+          <td colspan="3" class="no-entries">
+            Nenhuma saída registrada ainda.
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2" class="total-label">Total de Saídas:</td>
+          <td class="expense-value total-value">
+            {{
+              getTotalSaidas() | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            }}
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

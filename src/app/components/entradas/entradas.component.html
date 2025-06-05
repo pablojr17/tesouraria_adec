@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="input-section">
+    <h2>Entradas</h2>
+
+    <div class="input-group">
+      <input type="text" [(ngModel)]="descricaoEntrada" placeholder="Descrição">
+    </div>
+
+    <div class="input-group">
+      <input type="number" [(ngModel)]="valorEntrada" placeholder="Valor">
+    </div>
+
+    <div class="input-group">
+      <input type="date" [(ngModel)]="dataEntrada">
+    </div>
+
+    <button (click)="adicionarEntrada()">Adicionar Entrada</button>
+  </div>
+
+  <div class="entries-section">
+    <h2>Histórico de Entradas</h2>
+    <table class="entries-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Descrição</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let entrada of entradas">
+          <td>{{ entrada.data | date:'dd/MM/yyyy' }}</td>
+          <td>{{ entrada.descricao.toUpperCase() }}</td>
+          <td class="income-value">{{ entrada.valor | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</td>
+        </tr>
+        <tr *ngIf="entradas.length === 0">
+          <td colspan="3" class="no-entries">Nenhuma entrada registrada ainda.</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2" class="total-label">Total de Entradas:</td>
+          <td class="income-value total-value">{{ getTotalEntradas() | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
