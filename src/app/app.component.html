@@ -1,0 +1,26 @@
+<div class="main-container">
+  <header class="app-header">
+    <h1>ADEC</h1>
+    <h2 class="saldo-display">SALDO: {{ saldo | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</h2>
+  </header>
+
+  <div class="tab-navigation">
+    <button
+      (click)="selecionarAba('entradas')"
+      [class.active-tab]="abaSelecionada === 'entradas'"
+    >
+      ENTRADAS
+    </button>
+    <button
+      (click)="selecionarAba('saidas')"
+      [class.active-tab]="abaSelecionada === 'saidas'"
+    >
+      SAÍDAS
+    </button>
+  </div>
+
+  <div class="content-area">
+    <app-entradas *ngIf="abaSelecionada === 'entradas'"></app-entradas>
+    <app-saidas *ngIf="abaSelecionada === 'saidas'"></app-saidas>
+  </div>
+</div>

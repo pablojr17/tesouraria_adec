@@ -1,0 +1,122 @@
+/* General Body/Root Styling (if not already defined) */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5; /* Light gray background */
+  color: #333;
+}
+
+/* Main Container for the whole page content */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 30px 20px; /* Add padding around the whole content */
+  max-width: 900px; /* Max width to keep content readable on large screens */
+  margin: 0 auto; /* Center the container itself */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Header Section */
+.app-header {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px 40px;
+  margin-bottom: 30px;
+  width: 100%; /* Take full width of its parent */
+  text-align: center; /* Center text inside header */
+}
+
+.app-header h1 {
+  color: #2c3e50;
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.saldo-display {
+  color: #3498db; /* A distinct color for the balance */
+  font-size: 1.8em;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Tab Navigation Buttons */
+.tab-navigation {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 15px; /* Space between buttons */
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.tab-navigation button {
+  background-color: #ecf0f1; /* Light background for inactive tabs */
+  color: #2c3e50;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: all 0.3s ease; /* Smooth transitions for hover/active states */
+  min-width: 120px; /* Ensure buttons have a minimum width */
+}
+
+.tab-navigation button:hover {
+  background-color: #dce1e3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-navigation button.active-tab {
+  background-color: #3498db; /* Primary color for the active tab */
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+  transform: translateY(-2px); /* Slight lift for active tab */
+}
+
+/* Content Area for Tabbed Components */
+.content-area {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%; /* Take full width of its parent */
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 20px 15px;
+  }
+
+  .app-header {
+    padding: 20px 25px;
+  }
+
+  .app-header h1 {
+    font-size: 2.2em;
+  }
+
+  .saldo-display {
+    font-size: 1.5em;
+  }
+
+  .tab-navigation {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 10px;
+  }
+
+  .tab-navigation button {
+    width: 100%; /* Make buttons full width */
+    font-size: 1em;
+    padding: 10px 15px;
+  }
+
+  .content-area {
+    padding: 20px;
+  }
+}
