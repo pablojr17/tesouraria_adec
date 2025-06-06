@@ -115,6 +115,18 @@
       "descricao": "Microfone (amauri)",
       "valor": 119,
       "data": "2025-06-06"
+    },
+    {
+      "id": "b455",
+      "descricao": "zeladoria",
+      "valor": 400,
+      "data": "2025-06-06"
+    },
+    {
+      "id": "8d57",
+      "descricao": "02 ventiladores",
+      "valor": 680,
+      "data": "2025-06-06"
     }
   ]
 }
