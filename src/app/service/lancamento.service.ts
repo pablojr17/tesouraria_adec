@@ -7,14 +7,7 @@ import { Observable } from 'rxjs';
 export class LancamentoService {
   private apiUrl = 'http://localhost:3000';
 
-  constructor(private http: HttpClient) {}
-
-  getEntradas(): Observable<Lancamento[]> {
-    return this.http.get<Lancamento[]>(`${this.apiUrl}/entradas`);
-  }
-
-  getSaidas(): Observable<Lancamento[]> {
-    return this.http.get<Lancamento[]>(`${this.apiUrl}/saidas`);
+  constructor(private http: HttpClient) {
   }
 
   addEntrada(lancamento: Lancamento): Observable<Lancamento> {
@@ -24,4 +17,5 @@ export class LancamentoService {
   addSaida(lancamento: Lancamento): Observable<Lancamento> {
     return this.http.post<Lancamento>(`${this.apiUrl}/saidas`, lancamento);
   }
+
 }

@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core'; // Import OnInit
 import { FormsModule } from '@angular/forms';
 import { Lancamento } from '../../model/lancamento.model';
 import { LancamentoService } from '../../service/lancamento.service';
+import {saidas} from '../../../../db.json'
 
 @Component({
   selector: 'app-saidas',
@@ -17,8 +18,9 @@ export class SaidasComponent implements OnInit { // Implement OnInit
   descricaoSaida: string = '';
   valorSaida: number = 0;
   dataSaida: string = '';
+  isLocalhost: boolean = true
 
-  saidas: Lancamento[] = [];
+  saidas: Lancamento[] = saidas;
 
   constructor(private lancamentoService: LancamentoService) {
     // Constructor is generally for dependency injection.
@@ -26,6 +28,8 @@ export class SaidasComponent implements OnInit { // Implement OnInit
   }
 
   ngOnInit(): void {
+    this.isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
     // Fetch initial data when the component initializes
     this.atualizarSaidas();
   }
@@ -61,17 +65,7 @@ export class SaidasComponent implements OnInit { // Implement OnInit
   }
 
   atualizarSaidas(): void {
-    // Use the service to get the list of expenses
-    this.lancamentoService.getSaidas().subscribe({
-      next: (data) => {
-        console.log('Saídas carregadas:', data);
-        this.saidas = data;
-      },
-      error: (err) => {
-        console.error('Erro ao carregar saídas:', err);
-        // Optionally display an error message to the user
-      }
-    });
+    this.saidas = saidas;
   }
 
   /**

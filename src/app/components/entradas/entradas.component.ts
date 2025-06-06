@@ -3,7 +3,7 @@ import { LancamentoService } from '../../service/lancamento.service';
 import { Lancamento } from '../../model/lancamento.model';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-
+import {entradas} from '../../../../db.json'
 @Component({
   selector: 'app-entradas',
   standalone: true,
@@ -17,8 +17,8 @@ export class EntradasComponent implements OnInit { // Implement OnInit
   descricaoEntrada: string = '';
   valorEntrada: number = 0;
   dataEntrada: string = '';
-
-  entradas: Lancamento[] = []; // Array to hold your income objects
+  entradas: Lancamento[] = entradas; // Array to hold your income objects
+  isLocalhost: boolean = true
 
   constructor(private service: LancamentoService) {
     // Constructor is primarily for dependency injection.
@@ -28,6 +28,8 @@ export class EntradasComponent implements OnInit { // Implement OnInit
   ngOnInit(): void {
     // Fetch initial data when the component initializes
     this.atualizarLista();
+    this.isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
   }
 
   adicionarEntrada(): void { // Renamed for clarity and consistency
@@ -61,19 +63,9 @@ export class EntradasComponent implements OnInit { // Implement OnInit
     });
   }
 
-  atualizarLista(): void { // Consistent naming, assuming this fetches income
-    // Use the service to get the list of income entries
-    this.service.getEntradas().subscribe({
-      next: (dados) => {
-        console.log('Entradas carregadas:', dados);
-        this.entradas = dados;
-      },
-      error: (err) => {
-        console.error('Erro ao carregar entradas:', err);
-        // Optionally display an error message to the user
-      }
-    });
-  }
+atualizarLista(): void {
+ this.entradas = entradas;
+}
 
   /**
    * Calculates the total value of all income entries.

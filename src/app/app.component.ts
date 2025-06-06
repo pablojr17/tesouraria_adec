@@ -4,8 +4,7 @@ import { LancamentoService } from './service/lancamento.service';
 import { EntradasComponent } from './components/entradas/entradas.component';
 import { SaidasComponent } from './components/saidas/saidas.component';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
-import { Lancamento } from './model/lancamento.model';
+import { entradas, saidas } from '../../db.json'
 
 @Component({
   selector: 'app-root',
@@ -33,13 +32,9 @@ export class AppComponent {
     let entradasTotal = 0;
     let saidasTotal = 0;
 
-    this.service.getEntradas().subscribe((entradas: Lancamento[]) => {
-      entradasTotal = entradas.reduce((acc, e) => acc + e.valor, 0);
+    entradasTotal = entradas.reduce((acc, e) => acc + e.valor, 0);
+    saidasTotal = saidas.reduce((acc, s) => acc + s.valor, 0);
 
-      this.service.getSaidas().subscribe((saidas: Lancamento[]) => {
-        saidasTotal = saidas.reduce((acc, s) => acc + s.valor, 0);
-        this.saldo = entradasTotal - saidasTotal;
-      });
-    });
+    this.saldo = entradasTotal - saidasTotal;
   }
 }

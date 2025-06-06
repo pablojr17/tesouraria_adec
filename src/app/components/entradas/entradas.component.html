@@ -1,5 +1,5 @@
 <div class="container">
-  <!-- <div class="input-section">
+  <div class="input-section" *ngIf="isLocalhost">
     <h2>Entradas</h2>
 
     <div class="input-group">
@@ -15,7 +15,7 @@
     </div>
 
     <button (click)="adicionarEntrada()">Adicionar Entrada</button>
-  </div> -->
+  </div>
 
   <div class="entries-section">
     <h2>Histórico de Entradas</h2>
