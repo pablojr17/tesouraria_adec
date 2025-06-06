@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center; /* Centers the whole content horizontally */
-  padding: 20px;
+  padding: 4px;
   font-family: Arial, sans-serif;
   background-color: #f4f7f6;
   min-height: 100vh; /* Ensures it takes at least the full viewport height */
@@ -21,7 +21,7 @@ h2 {
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  padding: 30px;
+  padding: 16px;
   margin-bottom: 30px; /* Space between sections */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
   width: 100%;
@@ -80,7 +80,7 @@ button:hover {
 .entries-table th,
 .entries-table td {
   border: 1px solid #ddd;
-  padding: 12px;
+  padding: 8px;
   text-align: left;
 }
 
@@ -116,7 +116,7 @@ button:hover {
 }
 
 .entries-table tfoot td {
-  padding: 12px;
+  padding: 8px;
   border-top: 1px solid #ddd;
 }
 
@@ -138,7 +138,7 @@ button:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .input-section, .entries-section {
-    padding: 20px;
+    padding: 4px;
   }
 
   button {
@@ -149,6 +149,6 @@ button:hover {
   .entries-table th,
   .entries-table td {
     padding: 8px;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
