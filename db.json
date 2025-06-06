@@ -103,6 +103,18 @@
       "descricao": "gasolina pr daniel rio grande",
       "valor": 40,
       "data": "2025-06-05"
+    },
+    {
+      "id": "e3e5",
+      "descricao": "3/3 Arame",
+      "valor": 230,
+      "data": "2025-06-06"
+    },
+    {
+      "id": "2bc1",
+      "descricao": "Microfone (amauri)",
+      "valor": 119,
+      "data": "2025-06-06"
     }
   ]
 }
