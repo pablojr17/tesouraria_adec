@@ -77,6 +77,42 @@
       "descricao": "joão alves",
       "valor": 300,
       "data": "2025-06-04"
+    },
+    {
+      "id": "61ca",
+      "descricao": "JOAO SANTOS",
+      "valor": 200,
+      "data": "2025-06-06"
+    },
+    {
+      "id": "ffe1",
+      "descricao": "PB SIRLEONE",
+      "valor": 170,
+      "data": "2025-06-06"
+    },
+    {
+      "id": "9b7b",
+      "descricao": "INOCENCIA",
+      "valor": 200,
+      "data": "2025-06-06"
+    },
+    {
+      "id": "366f",
+      "descricao": "ANGELINA",
+      "valor": 288,
+      "data": "2025-06-06"
+    },
+    {
+      "id": "6bbe",
+      "descricao": "MARIA ROMEIRO",
+      "valor": 200,
+      "data": "2025-06-06"
+    },
+    {
+      "id": "79fa",
+      "descricao": "OFERTA CULTO",
+      "valor": 25.85,
+      "data": "2025-06-06"
     }
   ],
   "saidas": [
@@ -88,13 +124,13 @@
     },
     {
       "id": "8cff",
-      "descricao": "pastor daniel (pix)",
+      "descricao": "VALE pastor daniel (pix)",
       "valor": 400,
       "data": "2025-06-01"
     },
     {
       "id": "d06d",
-      "descricao": "pastor daniel (em mãos)",
+      "descricao": "vale pastor daniel (em mãos)",
       "valor": 426.95,
       "data": "2025-06-03"
     },
@@ -126,6 +162,30 @@
       "id": "8d57",
       "descricao": "02 ventiladores",
       "valor": 680,
+      "data": "2025-06-06"
+    },
+    {
+      "id": "6002",
+      "descricao": "MATERIAL LINVALDA (COPO VINHO E ALMOÇO)",
+      "valor": 250,
+      "data": "2025-06-06"
+    },
+    {
+      "id": "ae26",
+      "descricao": "CARNE REUNIÃO OBREIROS",
+      "valor": 177,
+      "data": "2025-06-06"
+    },
+    {
+      "id": "8166",
+      "descricao": "2KG DE FEIJÃO",
+      "valor": 18,
+      "data": "2025-06-06"
+    },
+    {
+      "id": "6dc2",
+      "descricao": "VALE PASTOR (em mãos)",
+      "valor": 283.85,
       "data": "2025-06-06"
     }
   ]
