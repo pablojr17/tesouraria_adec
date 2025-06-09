@@ -2,7 +2,7 @@
   "entradas": [
     {
       "id": "8995",
-      "descricao": "saldo anterio",
+      "descricao": "saldo anterior",
       "valor": 14.78,
       "data": "2025-06-01"
     },
@@ -35,6 +35,12 @@
       "descricao": "cleonice",
       "valor": 260,
       "data": "2025-06-02"
+    },
+     {
+      "id": "as84",
+      "descricao": "oferta culto",
+      "valor": 15.40,
+      "data": "2025-06-03"
     },
     {
       "id": "e207",
@@ -119,6 +125,36 @@
       "descricao": "VENDA NOVILHA",
       "valor": 1300,
       "data": "2025-06-07"
+    },
+    {
+      "id": "0a08",
+      "descricao": "oferta culto",
+      "valor": 16.95,
+      "data": "2025-06-08"
+    },
+    {
+      "id": "eb8b",
+      "descricao": "pedro",
+      "valor": 160,
+      "data": "2025-06-08"
+    },
+    {
+      "id": "ad08",
+      "descricao": "eusitania",
+      "valor": 650,
+      "data": "2025-06-08"
+    },
+    {
+      "id": "1ca2",
+      "descricao": "pb silvio",
+      "valor": 120,
+      "data": "2025-06-08"
+    },
+    {
+      "id": "1ff7",
+      "descricao": "william",
+      "valor": 180,
+      "data": "2025-06-08"
     }
   ],
   "saidas": [
@@ -172,7 +208,7 @@
     },
     {
       "id": "6002",
-      "descricao": "MATERIAL LINVALDA (COPO VINHO E ALMOÇO)",
+      "descricao": "MATERIAL LINDALDA (COPO VINHO E ALMOÇO)",
       "valor": 250,
       "data": "2025-06-06"
     },
@@ -193,6 +229,24 @@
       "descricao": "VALE PASTOR (em mãos)",
       "valor": 283.85,
       "data": "2025-06-06"
+    },
+    {
+      "id": "526c",
+      "descricao": "bebedouro",
+      "valor": 259,
+      "data": "2025-06-08"
+    },
+    {
+      "id": "a7c6",
+      "descricao": "ultima parcela mudança",
+      "valor": 450,
+      "data": "2025-06-08"
+    },
+    {
+      "id": "7643",
+      "descricao": "COZINHEIRA + lanche obreiros",
+      "valor": 199,
+      "data": "2025-06-08"
     }
   ]
 }
