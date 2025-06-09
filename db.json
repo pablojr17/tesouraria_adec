@@ -36,10 +36,10 @@
       "valor": 260,
       "data": "2025-06-02"
     },
-     {
+    {
       "id": "as84",
       "descricao": "oferta culto",
-      "valor": 15.40,
+      "valor": 15.4,
       "data": "2025-06-03"
     },
     {
@@ -247,6 +247,24 @@
       "descricao": "COZINHEIRA + lanche obreiros",
       "valor": 199,
       "data": "2025-06-08"
+    },
+    {
+      "id": "87be",
+      "descricao": "radio",
+      "valor": 315,
+      "data": "2025-06-09"
+    },
+    {
+      "id": "b51f",
+      "descricao": "ultima lojão",
+      "valor": 157,
+      "data": "2025-06-09"
+    },
+    {
+      "id": "f8e4",
+      "descricao": "vale pr daniel (pix)",
+      "valor": 389.2,
+      "data": "2025-06-09"
     }
   ]
 }
