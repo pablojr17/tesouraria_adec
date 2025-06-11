@@ -155,6 +155,12 @@
       "descricao": "william",
       "valor": 180,
       "data": "2025-06-08"
+    },
+    {
+      "id": "627e",
+      "descricao": "viviane vasco",
+      "valor": 426.5,
+      "data": "2025-06-11"
     }
   ],
   "saidas": [
@@ -166,13 +172,13 @@
     },
     {
       "id": "8cff",
-      "descricao": "VALE pastor daniel (pix)",
+      "descricao": "VALE pr daniel (pix)",
       "valor": 400,
       "data": "2025-06-01"
     },
     {
       "id": "d06d",
-      "descricao": "vale pastor daniel (em mãos)",
+      "descricao": "vale pr daniel (em mãos)",
       "valor": 426.95,
       "data": "2025-06-03"
     },
@@ -226,7 +232,7 @@
     },
     {
       "id": "6dc2",
-      "descricao": "VALE PASTOR (em mãos)",
+      "descricao": "VALE pr daniel (em mãos)",
       "valor": 283.85,
       "data": "2025-06-06"
     },
@@ -265,6 +271,24 @@
       "descricao": "vale pr daniel (pix)",
       "valor": 389.2,
       "data": "2025-06-09"
+    },
+    {
+      "id": "a670",
+      "descricao": "vale pr daniel (pix)",
+      "valor": 600,
+      "data": "2025-06-10"
+    },
+    {
+      "id": "fd46",
+      "descricao": "material de construção s. helena",
+      "valor": 1399,
+      "data": "2025-06-10"
+    },
+    {
+      "id": "9cd1",
+      "descricao": "gasolina jupagua",
+      "valor": 100,
+      "data": "2025-06-10"
     }
   ]
 }
