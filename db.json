@@ -37,12 +37,6 @@
       "data": "2025-06-02"
     },
     {
-      "id": "as84",
-      "descricao": "oferta culto",
-      "valor": 15.4,
-      "data": "2025-06-03"
-    },
-    {
       "id": "e207",
       "descricao": "marlete",
       "valor": 570,
@@ -59,6 +53,12 @@
       "descricao": "ronykleber",
       "valor": 600,
       "data": "2025-06-03"
+    },
+    {
+      "id": "as84",
+      "descricao": "oferta culto",
+      "valor": 15.4,
+      "data": "2025-06-04"
     },
     {
       "id": "792f",
