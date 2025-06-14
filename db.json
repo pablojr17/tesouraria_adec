@@ -161,6 +161,42 @@
       "descricao": "viviane vasco",
       "valor": 426.5,
       "data": "2025-06-11"
+    },
+    {
+      "id": "38af",
+      "descricao": "ALTA OLIVEIRA",
+      "valor": 230,
+      "data": "2025-06-11"
+    },
+    {
+      "id": "e60e",
+      "descricao": "LITINHA",
+      "valor": 400,
+      "data": "2025-06-11"
+    },
+    {
+      "id": "7e3a",
+      "descricao": "ANTONIA XAVIER",
+      "valor": 120,
+      "data": "2025-06-11"
+    },
+    {
+      "id": "fe75",
+      "descricao": "OFERTA CULTO",
+      "valor": 25.05,
+      "data": "2025-06-11"
+    },
+    {
+      "id": "fba2",
+      "descricao": "MARGARETE",
+      "valor": 140,
+      "data": "2025-06-12"
+    },
+    {
+      "id": "f1ce",
+      "descricao": "OFERTA CULTO",
+      "valor": 25.5,
+      "data": "2025-06-13"
     }
   ],
   "saidas": [
@@ -175,6 +211,12 @@
       "descricao": "VALE pr daniel (pix)",
       "valor": 400,
       "data": "2025-06-01"
+    },
+     {
+      "id": "8c58",
+      "descricao": "LANCHE CASA SILVIO",
+      "valor": 43,
+      "data": "2025-06-02"
     },
     {
       "id": "d06d",
@@ -289,6 +331,36 @@
       "descricao": "gasolina jupagua",
       "valor": 100,
       "data": "2025-06-10"
+    },
+    {
+      "id": "859e",
+      "descricao": "VALE PR DANIEL (EM MÃOS)",
+      "valor": 775,
+      "data": "2025-06-11"
+    },
+    {
+      "id": "de86",
+      "descricao": "LUCILO",
+      "valor": 600,
+      "data": "2025-06-12"
+    },
+    {
+      "id": "deYW",
+      "descricao": "VALE PR DANIEL (EM MÃOS)",
+      "valor": 27,
+      "data": "2025-06-12"
+    },
+    {
+      "id": "372e",
+      "descricao": "AJUDA IR JOÃO (OCULOS)",
+      "valor": 150,
+      "data": "2025-06-14"
+    },
+    {
+      "id": "8b3e",
+      "descricao": "VINHO CEIA (500ML)",
+      "valor": 11.9,
+      "data": "2025-06-14"
     }
   ]
 }
