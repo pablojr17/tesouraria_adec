@@ -195,8 +195,38 @@
     {
       "id": "f1ce",
       "descricao": "OFERTA CULTO",
-      "valor": 25.5,
+      "valor": 27.5,
       "data": "2025-06-13"
+    },
+    {
+      "id": "d025",
+      "descricao": "vilma escobar",
+      "valor": 574,
+      "data": "2025-06-14"
+    },
+    {
+      "id": "8769",
+      "descricao": "ivan",
+      "valor": 60,
+      "data": "2025-06-14"
+    },
+    {
+      "id": "f331",
+      "descricao": "ir tereza (oferta radio)",
+      "valor": 50,
+      "data": "2025-06-14"
+    },
+    {
+      "id": "244d",
+      "descricao": "oferta culto",
+      "valor": 69.5,
+      "data": "2025-06-14"
+    },
+    {
+      "id": "b68b",
+      "descricao": "neuza",
+      "valor": 150,
+      "data": "2025-06-24"
     }
   ],
   "saidas": [
@@ -212,7 +242,7 @@
       "valor": 400,
       "data": "2025-06-01"
     },
-     {
+    {
       "id": "8c58",
       "descricao": "LANCHE CASA SILVIO",
       "valor": 43,
@@ -359,7 +389,7 @@
     {
       "id": "8b3e",
       "descricao": "VINHO CEIA (500ML)",
-      "valor": 11.9,
+      "valor": 11.5,
       "data": "2025-06-14"
     }
   ]
