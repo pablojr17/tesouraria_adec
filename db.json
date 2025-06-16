@@ -227,6 +227,12 @@
       "descricao": "neuza",
       "valor": 150,
       "data": "2025-06-14"
+    },
+     {
+      "id": "fd9s",
+      "descricao": "oferta culto",
+      "valor": 13.8,
+      "data": "2025-06-14"
     }
   ],
   "saidas": [
