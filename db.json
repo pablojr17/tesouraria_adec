@@ -228,11 +228,23 @@
       "valor": 150,
       "data": "2025-06-14"
     },
-     {
+    {
       "id": "fd9s",
       "descricao": "oferta culto",
       "valor": 13.8,
       "data": "2025-06-15"
+    },
+    {
+      "id": "4b95",
+      "descricao": "ana maria",
+      "valor": 35,
+      "data": "2025-06-18"
+    },
+    {
+      "id": "3122",
+      "descricao": "oferta culto",
+      "valor": 27.2,
+      "data": "2025-06-18"
     }
   ],
   "saidas": [
@@ -397,6 +409,24 @@
       "descricao": "VINHO CEIA (500ML)",
       "valor": 11.5,
       "data": "2025-06-14"
+    },
+    {
+      "id": "89cf",
+      "descricao": "VALE PR DANIEL (PIX)",
+      "valor": 50,
+      "data": "2025-06-16"
+    },
+    {
+      "id": "20f2",
+      "descricao": "VALE PR DANIEL (PIX)",
+      "valor": 50,
+      "data": "2025-06-17"
+    },
+    {
+      "id": "6478",
+      "descricao": "VALE PR DANIEL (em mãos)",
+      "valor": 60,
+      "data": "2025-06-18"
     }
   ]
 }
