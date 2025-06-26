@@ -245,6 +245,66 @@
       "descricao": "oferta culto",
       "valor": 27.2,
       "data": "2025-06-18"
+    },
+    {
+      "id": "e494",
+      "descricao": "oferta culto",
+      "valor": 7.5,
+      "data": "2025-06-20"
+    },
+    {
+      "id": "bc43",
+      "descricao": "oferta recebida por Pb sirleone",
+      "valor": 20,
+      "data": "2025-06-21"
+    },
+    {
+      "id": "676d",
+      "descricao": "oferta culto",
+      "valor": 21.75,
+      "data": "2025-06-22"
+    },
+    {
+      "id": "b850",
+      "descricao": "dc. davi",
+      "valor": 130,
+      "data": "2025-06-22"
+    },
+    {
+      "id": "c506",
+      "descricao": "luiz paulo",
+      "valor": 200,
+      "data": "2025-06-23"
+    },
+    {
+      "id": "7daf",
+      "descricao": "joana maia",
+      "valor": 200,
+      "data": "2025-06-25"
+    },
+    {
+      "id": "5678",
+      "descricao": "oferta culto",
+      "valor": 3.8,
+      "data": "2025-06-25"
+    },
+    {
+      "id": "5919",
+      "descricao": "ana claudia",
+      "valor": 540,
+      "data": "2025-06-26"
+    },
+    {
+      "id": "e66b",
+      "descricao": "mizael serafim",
+      "valor": 180,
+      "data": "2025-06-26"
+    },
+    {
+      "id": "16c8",
+      "descricao": "cleonice souza",
+      "valor": 350,
+      "data": "2025-06-26"
     }
   ],
   "saidas": [
@@ -427,6 +487,42 @@
       "descricao": "VALE PR DANIEL (em mãos)",
       "valor": 60,
       "data": "2025-06-18"
+    },
+    {
+      "id": "0d54",
+      "descricao": "vale pr daniel (pix)",
+      "valor": 100,
+      "data": "2025-06-19"
+    },
+    {
+      "id": "5d26",
+      "descricao": "energias sede (maio e junho)",
+      "valor": 420.88,
+      "data": "2025-06-20"
+    },
+    {
+      "id": "70e9",
+      "descricao": "VALE PR DANIEL (PIX)",
+      "valor": 200,
+      "data": "2025-06-20"
+    },
+    {
+      "id": "aeb2",
+      "descricao": "VALE PR DANIEL (PIX)",
+      "valor": 130,
+      "data": "2025-06-23"
+    },
+    {
+      "id": "7700",
+      "descricao": "energias casa pastoral",
+      "valor": 911.2,
+      "data": "2025-06-20"
+    },
+    {
+      "id": "9d5a",
+      "descricao": "VALE PR DANIEL (PIX)",
+      "valor": 668.8,
+      "data": "2025-06-26"
     }
   ]
 }
