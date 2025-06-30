@@ -305,6 +305,90 @@
       "descricao": "cleonice souza",
       "valor": 350,
       "data": "2025-06-26"
+    },
+    {
+      "id": "a197",
+      "descricao": "ronykleber",
+      "valor": 570,
+      "data": "2025-06-27"
+    },
+    {
+      "id": "8952",
+      "descricao": "dc firmino",
+      "valor": 150,
+      "data": "2025-06-27"
+    },
+    {
+      "id": "e110",
+      "descricao": "maria aparecida",
+      "valor": 255,
+      "data": "2025-06-27"
+    },
+    {
+      "id": "e642",
+      "descricao": "eurides",
+      "valor": 150,
+      "data": "2025-06-27"
+    },
+    {
+      "id": "115e",
+      "descricao": "bela",
+      "valor": 152,
+      "data": "2025-06-27"
+    },
+    {
+      "id": "8c89",
+      "descricao": "oferta culto",
+      "valor": 6.1,
+      "data": "2025-06-27"
+    },
+    {
+      "id": "cfee",
+      "descricao": "pb sirleone",
+      "valor": 162,
+      "data": "2025-06-28"
+    },
+    {
+      "id": "aa96",
+      "descricao": "marlete",
+      "valor": 570,
+      "data": "2025-06-28"
+    },
+    {
+      "id": "358f",
+      "descricao": "oferta culto",
+      "valor": 8.35,
+      "data": "2025-06-29"
+    },
+    {
+      "id": "0d65",
+      "descricao": "dc kailquer",
+      "valor": 302,
+      "data": "2025-06-29"
+    },
+    {
+      "id": "67d6",
+      "descricao": "ana souza",
+      "valor": 200,
+      "data": "2025-06-29"
+    },
+    {
+      "id": "d0f7",
+      "descricao": "dc joão romeiro",
+      "valor": 50,
+      "data": "2025-06-29"
+    },
+    {
+      "id": "61a3",
+      "descricao": "josiene",
+      "valor": 60,
+      "data": "2025-06-29"
+    },
+    {
+      "id": "aeb9",
+      "descricao": "dc pablo",
+      "valor": 80,
+      "data": "2025-06-30"
     }
   ],
   "saidas": [
@@ -523,6 +607,30 @@
       "descricao": "VALE PR DANIEL (PIX)",
       "valor": 668.8,
       "data": "2025-06-26"
+    },
+    {
+      "id": "be64",
+      "descricao": "aguas (sede e casa pastoral)",
+      "valor": 331.01,
+      "data": "2025-06-27"
+    },
+    {
+      "id": "a199",
+      "descricao": "VALE PR DANIEL (em mãos)",
+      "valor": 382.09,
+      "data": "2025-06-27"
+    },
+    {
+      "id": "37ff",
+      "descricao": "material café ebd",
+      "valor": 82.9,
+      "data": "2025-06-28"
+    },
+    {
+      "id": "fb6a",
+      "descricao": "fundo convencional",
+      "valor": 1423.45,
+      "data": "2025-06-30"
     }
   ]
 }
