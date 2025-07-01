@@ -389,6 +389,54 @@
       "descricao": "dc pablo",
       "valor": 80,
       "data": "2025-06-30"
+    },
+    {
+      "id": "7586",
+      "descricao": "revistas tayna",
+      "valor": 20,
+      "data": "2025-06-30"
+    },
+    {
+      "id": "e61e",
+      "descricao": "amauri",
+      "valor": 243.83,
+      "data": "2025-06-30"
+    },
+    {
+      "id": "5fd2",
+      "descricao": "rufina vila",
+      "valor": 240,
+      "data": "2025-06-30"
+    },
+    {
+      "id": "1ca9",
+      "descricao": "izaide",
+      "valor": 50,
+      "data": "2025-06-30"
+    },
+    {
+      "id": "6105",
+      "descricao": "neuracy",
+      "valor": 200,
+      "data": "2025-06-30"
+    },
+    {
+      "id": "3fc3",
+      "descricao": "acy",
+      "valor": 500,
+      "data": "2025-06-30"
+    },
+    {
+      "id": "19b8",
+      "descricao": "carmita",
+      "valor": 107,
+      "data": "2025-06-30"
+    },
+    {
+      "id": "79a2",
+      "descricao": "ofertas vila",
+      "valor": 168.3,
+      "data": "2025-06-30"
     }
   ],
   "saidas": [
@@ -630,6 +678,30 @@
       "id": "fb6a",
       "descricao": "fundo convencional",
       "valor": 1423.45,
+      "data": "2025-06-30"
+    },
+    {
+      "id": "a006",
+      "descricao": "agua",
+      "valor": 51.1,
+      "data": "2025-06-30"
+    },
+    {
+      "id": "7b6e",
+      "descricao": "produto de limpeza vila",
+      "valor": 67.5,
+      "data": "2025-06-30"
+    },
+    {
+      "id": "4fb0",
+      "descricao": "combustivel vila",
+      "valor": 100,
+      "data": "2025-06-30"
+    },
+    {
+      "id": "ae41",
+      "descricao": "zeladora",
+      "valor": 200,
       "data": "2025-06-30"
     }
   ]
