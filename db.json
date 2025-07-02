@@ -614,7 +614,7 @@
     {
       "id": "8cff",
       "descricao": "VALE pr daniel (pix)",
-      "valor": 400,
+      "valor": 317,
       "data": "2025-06-01",
       "origem": "SEDE"
     },
@@ -974,6 +974,20 @@
       "valor": 160,
       "data": "2025-06-30",
       "origem": "Rio Grande II"
+    },
+    {
+      "id": "2057",
+      "descricao": "10% missões ",
+      "valor": 1700,
+      "data": "2025-06-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "781c",
+      "descricao": "mat expediente e consumo",
+      "valor": 83,
+      "data": "2025-06-30",
+      "origem": "SEDE"
     }
   ]
 }
