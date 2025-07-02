@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="input-section" *ngIf="isLocalhost">
+  <div class="input-section" *ngIf="isLocalhost">
     <h2>Saídas</h2>
 
     <div class="input-group">
@@ -18,14 +18,49 @@
       />
     </div>
 
-    <div class="input-group">
+    <div
+      class="input-group"
+      style="
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+      "
+    >
       <input type="date" [(ngModel)]="dataSaida" />
+
+      <select [(ngModel)]="origem">
+        <option value="" disabled selected>Selecione a origem</option>
+        <option value="SEDE">SEDE</option>
+        <option value="Vila Santana">Vila Santana</option>
+        <option value="Rio Grande II">Rio Grande II</option>
+        <option value="Jupagua">Jupagua</option>
+      </select>
     </div>
 
     <button (click)="adicionarSaida()">Adicionar Saída</button>
   </div>
 
   <div class="entries-section">
+    <div
+      class="input-group"
+      style="
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <label for="filtroOrigem">Filtrar por Origem:</label>
+      <select id="filtroOrigem" [(ngModel)]="origemSelecionada">
+        <option value="TODOS">Todos</option>
+        <option value="SEDE">SEDE</option>
+        <option value="Vila Santana">Vila Santana</option>
+        <option value="Rio Grande II">Rio Grande II</option>
+        <option value="Jupagua">Jupagua</option>
+      </select>
+    </div>
+
     <h2>Histórico de Saídas</h2>
     <table class="entries-table">
       <thead>
@@ -33,25 +68,27 @@
           <th>Data</th>
           <th>Descrição</th>
           <th>Valor</th>
+          <th style="text-align: center;">Origem</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let saida of saidas">
+        <tr *ngFor="let saida of saidasFiltradas()">
           <td>{{ saida.data | date : "dd/MM/yyyy" }}</td>
           <td>{{ saida.descricao.toUpperCase() }}</td>
           <td class="expense-value">
             {{ saida.valor | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR" }}
           </td>
+          <td style="text-align: center;">{{ saida.origem }}</td>
         </tr>
-        <tr *ngIf="saidas.length === 0">
-          <td colspan="3" class="no-entries">
+        <tr *ngIf="saidasFiltradas().length === 0">
+          <td colspan="4" class="no-entries">
             Nenhuma saída registrada ainda.
           </td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="2" class="total-label">Total de Saídas:</td>
+          <td colspan="3" class="total-label">Total de Saídas:</td>
           <td class="expense-value total-value">
             {{
               getTotalSaidas() | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"

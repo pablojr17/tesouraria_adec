@@ -19,7 +19,8 @@ export class EntradasComponent implements OnInit { // Implement OnInit
   dataEntrada: string = '';
   entradas: Lancamento[] = entradas; // Array to hold your income objects
   isLocalhost: boolean = true
-
+origem: string = '';
+origemSelecionada: string = 'TODOS';
   constructor(private service: LancamentoService) {
     // Constructor is primarily for dependency injection.
     // Initial data fetching should ideally be in ngOnInit.
@@ -34,7 +35,7 @@ export class EntradasComponent implements OnInit { // Implement OnInit
 
   adicionarEntrada(): void { // Renamed for clarity and consistency
     // Validate inputs: ensure all fields are filled and value is positive
-    if (!this.descricaoEntrada || this.valorEntrada <= 0 || !this.dataEntrada) {
+    if (!this.descricaoEntrada || this.valorEntrada <= 0 || !this.dataEntrada || !this.origem) {
       // Use a more user-friendly alert or a modal instead of browser's alert in a real app
       alert('Por favor, preencha todos os campos da entrada corretamente (descrição, valor maior que 0 e data).');
       return;
@@ -44,6 +45,7 @@ export class EntradasComponent implements OnInit { // Implement OnInit
       descricao: this.descricaoEntrada, // Use the specific input variable
       valor: this.valorEntrada,         // Use the specific input variable
       data: this.dataEntrada,           // Use the specific input variable
+      origem: this.origem,           // Use the specific input variable
     };
 
     // Use the service to add the new income entry
@@ -53,6 +55,7 @@ export class EntradasComponent implements OnInit { // Implement OnInit
         this.descricaoEntrada = '';
         this.valorEntrada = 0;
         this.dataEntrada = '';
+        this.origem = ''
         // Refresh the list of income entries from the service
         this.atualizarLista();
       },
@@ -71,7 +74,14 @@ atualizarLista(): void {
    * Calculates the total value of all income entries.
    * This method is used in the HTML to display the sum in the table footer.
    */
-  getTotalEntradas(): number {
-    return this.entradas.reduce((total, entrada) => total + entrada.valor, 0);
+getTotalEntradas(): number {
+  return this.entradasFiltradas().reduce((total, entrada) => total + entrada.valor, 0);
+}
+
+entradasFiltradas() {
+  if (this.origemSelecionada === 'TODOS') {
+    return this.entradas;
   }
+  return this.entradas.filter(e => e.origem === this.origemSelecionada);
+}
 }

@@ -17,7 +17,8 @@ h2 {
   text-align: center;
 }
 
-.input-section, .entries-section {
+.input-section,
+.entries-section {
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -42,8 +43,9 @@ h2 {
 
 input[type="text"],
 input[type="number"],
+select,
 input[type="date"] {
-  width: calc(100% - 20px); /* Account for padding */
+  width: 100%; /* Account for padding */
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -137,7 +139,8 @@ button:hover {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .input-section, .entries-section {
+  .input-section,
+  .entries-section {
     padding: 4px;
   }
 

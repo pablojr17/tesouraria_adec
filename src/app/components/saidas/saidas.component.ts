@@ -3,22 +3,25 @@ import { Component, OnInit } from '@angular/core'; // Import OnInit
 import { FormsModule } from '@angular/forms';
 import { Lancamento } from '../../model/lancamento.model';
 import { LancamentoService } from '../../service/lancamento.service';
-import {saidas} from '../../../../db.json'
+import { saidas } from '../../../../db.json';
 
 @Component({
   selector: 'app-saidas',
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './saidas.component.html',
-  styleUrl: './saidas.component.scss'
+  styleUrl: './saidas.component.scss',
 })
-export class SaidasComponent implements OnInit { // Implement OnInit
+export class SaidasComponent implements OnInit {
+  // Implement OnInit
 
   // Use specific names for 'saida' related input fields
   descricaoSaida: string = '';
   valorSaida: number = 0;
   dataSaida: string = '';
-  isLocalhost: boolean = true
+  isLocalhost: boolean = true;
+  origem: string = '';
+  origemSelecionada: string = 'TODOS';
 
   saidas: Lancamento[] = saidas;
 
@@ -28,7 +31,9 @@ export class SaidasComponent implements OnInit { // Implement OnInit
   }
 
   ngOnInit(): void {
-    this.isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    this.isLocalhost =
+      window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1';
 
     // Fetch initial data when the component initializes
     this.atualizarSaidas();
@@ -37,7 +42,9 @@ export class SaidasComponent implements OnInit { // Implement OnInit
   adicionarSaida(): void {
     // Check for valid input
     if (!this.descricaoSaida || this.valorSaida <= 0 || !this.dataSaida) {
-      alert('Por favor, preencha todos os campos da saída corretamente (descrição, valor maior que 0 e data).');
+      alert(
+        'Por favor, preencha todos os campos da saída corretamente (descrição, valor maior que 0 e data).'
+      );
       return;
     }
 
@@ -45,6 +52,7 @@ export class SaidasComponent implements OnInit { // Implement OnInit
       descricao: this.descricaoSaida,
       valor: this.valorSaida,
       data: this.dataSaida,
+      origem: this.origem,
     };
 
     // Use the service to add the new expense
@@ -60,7 +68,7 @@ export class SaidasComponent implements OnInit { // Implement OnInit
       error: (err) => {
         console.error('Erro ao adicionar saída:', err);
         alert('Ocorreu um erro ao adicionar a saída. Tente novamente.');
-      }
+      },
     });
   }
 
@@ -68,11 +76,17 @@ export class SaidasComponent implements OnInit { // Implement OnInit
     this.saidas = saidas;
   }
 
-  /**
-   * Calculates the total value of all expenses.
-   * This method is used in the HTML to display the sum.
-   */
+  saidasFiltradas() {
+    if (this.origemSelecionada === 'TODOS') {
+      return this.saidas;
+    }
+    return this.saidas.filter((s) => s.origem === this.origemSelecionada);
+  }
+
   getTotalSaidas(): number {
-    return this.saidas.reduce((total, saida) => total + saida.valor, 0);
+    return this.saidasFiltradas().reduce(
+      (total, saida) => total + saida.valor,
+      0
+    );
   }
 }
