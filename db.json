@@ -1,5 +1,12 @@
 {
   "entradas": [
+     {
+      "id": "oic9",
+      "descricao": "saldo anterior",
+      "valor": 1231.78,
+      "data": "2025-06-01",
+      "origem": "SEDE"
+    },
     {
       "id": "8e84",
       "descricao": "tatiana",
@@ -972,6 +979,13 @@
       "id": "a3cd",
       "descricao": "material instalação igreja",
       "valor": 160,
+      "data": "2025-06-30",
+      "origem": "Rio Grande II"
+    },
+     {
+      "id": "jhfç",
+      "descricao": "prebenda obreiro",
+      "valor": 120,
       "data": "2025-06-30",
       "origem": "Rio Grande II"
     },
