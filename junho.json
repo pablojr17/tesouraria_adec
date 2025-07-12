@@ -1,0 +1,1007 @@
+{
+  "entradas": [
+     {
+      "id": "oic9",
+      "descricao": "saldo anterior",
+      "valor": 1231.78,
+      "data": "2025-06-01",
+      "origem": "SEDE"
+    },
+    {
+      "id": "8e84",
+      "descricao": "tatiana",
+      "valor": 100,
+      "data": "2025-06-01",
+      "origem": "SEDE"
+    },
+    {
+      "id": "9ff4",
+      "descricao": "marlene",
+      "valor": 120,
+      "data": "2025-06-01",
+      "origem": "SEDE"
+    },
+    {
+      "id": "2eb8",
+      "descricao": "dc. kailquer",
+      "valor": 410,
+      "data": "2025-06-01",
+      "origem": "SEDE"
+    },
+    {
+      "id": "f81a",
+      "descricao": "oferta culto missões",
+      "valor": 45.25,
+      "data": "2025-06-01",
+      "origem": "SEDE"
+    },
+    {
+      "id": "6b78",
+      "descricao": "cleonice",
+      "valor": 260,
+      "data": "2025-06-02",
+      "origem": "SEDE"
+    },
+    {
+      "id": "e207",
+      "descricao": "marlete",
+      "valor": 570,
+      "data": "2025-06-03",
+      "origem": "SEDE"
+    },
+    {
+      "id": "a48e",
+      "descricao": "edinete",
+      "valor": 500,
+      "data": "2025-06-03",
+      "origem": "SEDE"
+    },
+    {
+      "id": "0205",
+      "descricao": "ronykleber",
+      "valor": 600,
+      "data": "2025-06-03",
+      "origem": "SEDE"
+    },
+    {
+      "id": "as84",
+      "descricao": "oferta culto",
+      "valor": 15.4,
+      "data": "2025-06-04",
+      "origem": "SEDE"
+    },
+    {
+      "id": "792f",
+      "descricao": "isabel serafim",
+      "valor": 400,
+      "data": "2025-06-04",
+      "origem": "SEDE"
+    },
+    {
+      "id": "c13e",
+      "descricao": "tereza",
+      "valor": 225,
+      "data": "2025-06-04",
+      "origem": "SEDE"
+    },
+    {
+      "id": "ac7f",
+      "descricao": "raiane",
+      "valor": 130,
+      "data": "2025-06-04",
+      "origem": "SEDE"
+    },
+    {
+      "id": "a573",
+      "descricao": "joão alves",
+      "valor": 300,
+      "data": "2025-06-04",
+      "origem": "SEDE"
+    },
+    {
+      "id": "61ca",
+      "descricao": "JOAO SANTOS",
+      "valor": 200,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "ffe1",
+      "descricao": "PB SIRLEONE",
+      "valor": 170,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "9b7b",
+      "descricao": "INOCENCIA",
+      "valor": 200,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "366f",
+      "descricao": "ANGELINA",
+      "valor": 288,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "6bbe",
+      "descricao": "MARIA ROMEIRO",
+      "valor": 200,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "79fa",
+      "descricao": "OFERTA CULTO",
+      "valor": 25.85,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "6982",
+      "descricao": "VENDA NOVILHA",
+      "valor": 1300,
+      "data": "2025-06-07",
+      "origem": "SEDE"
+    },
+    {
+      "id": "0a08",
+      "descricao": "oferta culto",
+      "valor": 16.95,
+      "data": "2025-06-08",
+      "origem": "SEDE"
+    },
+    {
+      "id": "eb8b",
+      "descricao": "pedro",
+      "valor": 160,
+      "data": "2025-06-08",
+      "origem": "SEDE"
+    },
+    {
+      "id": "ad08",
+      "descricao": "eusitania",
+      "valor": 650,
+      "data": "2025-06-08",
+      "origem": "SEDE"
+    },
+    {
+      "id": "1ca2",
+      "descricao": "pb silvio",
+      "valor": 120,
+      "data": "2025-06-08",
+      "origem": "SEDE"
+    },
+    {
+      "id": "1ff7",
+      "descricao": "william",
+      "valor": 180,
+      "data": "2025-06-08",
+      "origem": "SEDE"
+    },
+    {
+      "id": "627e",
+      "descricao": "viviane vasco",
+      "valor": 426.5,
+      "data": "2025-06-11",
+      "origem": "SEDE"
+    },
+    {
+      "id": "38af",
+      "descricao": "ALTA OLIVEIRA",
+      "valor": 230,
+      "data": "2025-06-11",
+      "origem": "SEDE"
+    },
+    {
+      "id": "e60e",
+      "descricao": "LITINHA",
+      "valor": 400,
+      "data": "2025-06-11",
+      "origem": "SEDE"
+    },
+    {
+      "id": "7e3a",
+      "descricao": "ANTONIA XAVIER",
+      "valor": 120,
+      "data": "2025-06-11",
+      "origem": "SEDE"
+    },
+    {
+      "id": "fe75",
+      "descricao": "OFERTA CULTO",
+      "valor": 25.05,
+      "data": "2025-06-11",
+      "origem": "SEDE"
+    },
+    {
+      "id": "fba2",
+      "descricao": "MARGARETE",
+      "valor": 140,
+      "data": "2025-06-12",
+      "origem": "SEDE"
+    },
+    {
+      "id": "f1ce",
+      "descricao": "OFERTA CULTO",
+      "valor": 27.5,
+      "data": "2025-06-13",
+      "origem": "SEDE"
+    },
+    {
+      "id": "d025",
+      "descricao": "vilma escobar",
+      "valor": 574,
+      "data": "2025-06-14",
+      "origem": "SEDE"
+    },
+    {
+      "id": "8769",
+      "descricao": "ivan",
+      "valor": 60,
+      "data": "2025-06-14",
+      "origem": "SEDE"
+    },
+    {
+      "id": "f331",
+      "descricao": "ir tereza (oferta radio)",
+      "valor": 50,
+      "data": "2025-06-14",
+      "origem": "SEDE"
+    },
+    {
+      "id": "244d",
+      "descricao": "oferta culto",
+      "valor": 69.5,
+      "data": "2025-06-14",
+      "origem": "SEDE"
+    },
+    {
+      "id": "b68b",
+      "descricao": "neuza",
+      "valor": 150,
+      "data": "2025-06-14",
+      "origem": "SEDE"
+    },
+    {
+      "id": "fd9s",
+      "descricao": "oferta culto",
+      "valor": 13.8,
+      "data": "2025-06-15",
+      "origem": "SEDE"
+    },
+    {
+      "id": "4b95",
+      "descricao": "ana maria",
+      "valor": 35,
+      "data": "2025-06-18",
+      "origem": "SEDE"
+    },
+    {
+      "id": "3122",
+      "descricao": "oferta culto",
+      "valor": 27.2,
+      "data": "2025-06-18",
+      "origem": "SEDE"
+    },
+    {
+      "id": "e494",
+      "descricao": "oferta culto",
+      "valor": 7.5,
+      "data": "2025-06-20",
+      "origem": "SEDE"
+    },
+    {
+      "id": "bc43",
+      "descricao": "oferta recebida por Pb sirleone",
+      "valor": 20,
+      "data": "2025-06-21",
+      "origem": "SEDE"
+    },
+    {
+      "id": "676d",
+      "descricao": "oferta culto",
+      "valor": 21.75,
+      "data": "2025-06-22",
+      "origem": "SEDE"
+    },
+    {
+      "id": "b850",
+      "descricao": "dc. davi",
+      "valor": 130,
+      "data": "2025-06-22",
+      "origem": "SEDE"
+    },
+    {
+      "id": "c506",
+      "descricao": "luiz paulo",
+      "valor": 200,
+      "data": "2025-06-23",
+      "origem": "SEDE"
+    },
+    {
+      "id": "7daf",
+      "descricao": "joana maia",
+      "valor": 200,
+      "data": "2025-06-25",
+      "origem": "SEDE"
+    },
+    {
+      "id": "5678",
+      "descricao": "oferta culto",
+      "valor": 3.8,
+      "data": "2025-06-25",
+      "origem": "SEDE"
+    },
+    {
+      "id": "5919",
+      "descricao": "ana claudia",
+      "valor": 540,
+      "data": "2025-06-26",
+      "origem": "SEDE"
+    },
+    {
+      "id": "e66b",
+      "descricao": "mizael serafim",
+      "valor": 180,
+      "data": "2025-06-26",
+      "origem": "SEDE"
+    },
+    {
+      "id": "16c8",
+      "descricao": "cleonice souza",
+      "valor": 350,
+      "data": "2025-06-26",
+      "origem": "SEDE"
+    },
+    {
+      "id": "a197",
+      "descricao": "ronykleber",
+      "valor": 570,
+      "data": "2025-06-27",
+      "origem": "SEDE"
+    },
+    {
+      "id": "8952",
+      "descricao": "dc firmino",
+      "valor": 150,
+      "data": "2025-06-27",
+      "origem": "SEDE"
+    },
+    {
+      "id": "e110",
+      "descricao": "maria aparecida",
+      "valor": 255,
+      "data": "2025-06-27",
+      "origem": "SEDE"
+    },
+    {
+      "id": "e642",
+      "descricao": "eurides",
+      "valor": 150,
+      "data": "2025-06-27",
+      "origem": "SEDE"
+    },
+    {
+      "id": "115e",
+      "descricao": "bela",
+      "valor": 152,
+      "data": "2025-06-27",
+      "origem": "SEDE"
+    },
+    {
+      "id": "8c89",
+      "descricao": "oferta culto",
+      "valor": 6.1,
+      "data": "2025-06-27",
+      "origem": "SEDE"
+    },
+    {
+      "id": "cfee",
+      "descricao": "pb sirleone",
+      "valor": 162,
+      "data": "2025-06-28",
+      "origem": "SEDE"
+    },
+    {
+      "id": "aa96",
+      "descricao": "marlete",
+      "valor": 570,
+      "data": "2025-06-28",
+      "origem": "SEDE"
+    },
+    {
+      "id": "358f",
+      "descricao": "oferta culto",
+      "valor": 8.35,
+      "data": "2025-06-29",
+      "origem": "SEDE"
+    },
+    {
+      "id": "0d65",
+      "descricao": "dc kailquer",
+      "valor": 302,
+      "data": "2025-06-29",
+      "origem": "SEDE"
+    },
+    {
+      "id": "67d6",
+      "descricao": "ana souza",
+      "valor": 200,
+      "data": "2025-06-29",
+      "origem": "SEDE"
+    },
+    {
+      "id": "d0f7",
+      "descricao": "dc joão romeiro",
+      "valor": 50,
+      "data": "2025-06-29",
+      "origem": "SEDE"
+    },
+    {
+      "id": "61a3",
+      "descricao": "josiene",
+      "valor": 60,
+      "data": "2025-06-29",
+      "origem": "SEDE"
+    },
+    {
+      "id": "aeb9",
+      "descricao": "dc pablo",
+      "valor": 80,
+      "data": "2025-06-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "7586",
+      "descricao": "revistas tayna",
+      "valor": 20,
+      "data": "2025-06-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "e61e",
+      "descricao": "amauri",
+      "valor": 243.83,
+      "data": "2025-06-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "5fd2",
+      "descricao": "rufina vila",
+      "valor": 240,
+      "data": "2025-06-30",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "1ca9",
+      "descricao": "izaide",
+      "valor": 50,
+      "data": "2025-06-30",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "6105",
+      "descricao": "neuracy",
+      "valor": 200,
+      "data": "2025-06-30",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "3fc3",
+      "descricao": "acy",
+      "valor": 500,
+      "data": "2025-06-30",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "19b8",
+      "descricao": "carmita",
+      "valor": 107,
+      "data": "2025-06-30",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "79a2",
+      "descricao": "ofertas vila",
+      "valor": 168.3,
+      "data": "2025-06-30",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "5ced",
+      "descricao": "elza",
+      "valor": 150,
+      "data": "2025-07-01",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "83f0",
+      "descricao": "dinete",
+      "valor": 50,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "d7d0",
+      "descricao": "rogerio",
+      "valor": 50,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "2d5b",
+      "descricao": "gladja",
+      "valor": 100,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "0b72",
+      "descricao": "neuma",
+      "valor": 100,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "f997",
+      "descricao": "lucilo",
+      "valor": 80,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "4845",
+      "descricao": "nadiele",
+      "valor": 80,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "e0f8",
+      "descricao": "oferta jupagua",
+      "valor": 310,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "7b50",
+      "descricao": "eridalva",
+      "valor": 180,
+      "data": "2025-06-18",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "1212",
+      "descricao": "mariete",
+      "valor": 110,
+      "data": "2025-06-24",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "21ee",
+      "descricao": "JUSTINA",
+      "valor": 100,
+      "data": "2025-06-24",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "5dae",
+      "descricao": "SUELI",
+      "valor": 50,
+      "data": "2025-06-29",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "12b0",
+      "descricao": "JOSE ANTONIO",
+      "valor": 100,
+      "data": "2025-06-30",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "65f6",
+      "descricao": "OFERTAS RIO GRANDE",
+      "valor": 100,
+      "data": "2025-06-30",
+      "origem": "Rio Grande II"
+    }
+  ],
+  "saidas": [
+    {
+      "id": "d9aa",
+      "descricao": "oferta culto de missoes",
+      "valor": 45.25,
+      "data": "2025-06-01",
+      "origem": "SEDE"
+    },
+    {
+      "id": "8cff",
+      "descricao": "VALE pr daniel (pix)",
+      "valor": 317,
+      "data": "2025-06-01",
+      "origem": "SEDE"
+    },
+    {
+      "id": "8c58",
+      "descricao": "LANCHE CASA SILVIO",
+      "valor": 43,
+      "data": "2025-06-02",
+      "origem": "SEDE"
+    },
+    {
+      "id": "d06d",
+      "descricao": "vale pr daniel (em mãos)",
+      "valor": 426.95,
+      "data": "2025-06-03",
+      "origem": "SEDE"
+    },
+    {
+      "id": "8fde",
+      "descricao": "gasolina pr daniel rio grande",
+      "valor": 40,
+      "data": "2025-06-05",
+      "origem": "SEDE"
+    },
+    {
+      "id": "e3e5",
+      "descricao": "3/3 Arame",
+      "valor": 230,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "2bc1",
+      "descricao": "Microfone (amauri)",
+      "valor": 119,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "b455",
+      "descricao": "zeladoria",
+      "valor": 400,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "8d57",
+      "descricao": "02 ventiladores",
+      "valor": 680,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "6002",
+      "descricao": "MATERIAL LINDALDA (COPO VINHO E ALMOÇO)",
+      "valor": 250,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "ae26",
+      "descricao": "CARNE REUNIÃO OBREIROS",
+      "valor": 177,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "8166",
+      "descricao": "2KG DE FEIJÃO",
+      "valor": 18,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "6dc2",
+      "descricao": "VALE pr daniel (em mãos)",
+      "valor": 283.85,
+      "data": "2025-06-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "526c",
+      "descricao": "bebedouro",
+      "valor": 259,
+      "data": "2025-06-08",
+      "origem": "SEDE"
+    },
+    {
+      "id": "a7c6",
+      "descricao": "ultima parcela mudança",
+      "valor": 450,
+      "data": "2025-06-08",
+      "origem": "SEDE"
+    },
+    {
+      "id": "7643",
+      "descricao": "COZINHEIRA + lanche obreiros",
+      "valor": 199,
+      "data": "2025-06-08",
+      "origem": "SEDE"
+    },
+    {
+      "id": "87be",
+      "descricao": "radio",
+      "valor": 315,
+      "data": "2025-06-09",
+      "origem": "SEDE"
+    },
+    {
+      "id": "b51f",
+      "descricao": "ultima lojão",
+      "valor": 157,
+      "data": "2025-06-09",
+      "origem": "SEDE"
+    },
+    {
+      "id": "f8e4",
+      "descricao": "vale pr daniel (pix)",
+      "valor": 389.2,
+      "data": "2025-06-09",
+      "origem": "SEDE"
+    },
+    {
+      "id": "a670",
+      "descricao": "vale pr daniel (pix)",
+      "valor": 600,
+      "data": "2025-06-10",
+      "origem": "SEDE"
+    },
+    {
+      "id": "fd46",
+      "descricao": "material de construção s. helena",
+      "valor": 1399,
+      "data": "2025-06-10",
+      "origem": "SEDE"
+    },
+    {
+      "id": "9cd1",
+      "descricao": "gasolina jupagua",
+      "valor": 100,
+      "data": "2025-06-10",
+      "origem": "SEDE"
+    },
+    {
+      "id": "859e",
+      "descricao": "VALE PR DANIEL (EM MÃOS)",
+      "valor": 775,
+      "data": "2025-06-11",
+      "origem": "SEDE"
+    },
+    {
+      "id": "de86",
+      "descricao": "LUCILO",
+      "valor": 600,
+      "data": "2025-06-12",
+      "origem": "SEDE"
+    },
+    {
+      "id": "deYW",
+      "descricao": "VALE PR DANIEL (EM MÃOS)",
+      "valor": 27,
+      "data": "2025-06-12",
+      "origem": "SEDE"
+    },
+    {
+      "id": "372e",
+      "descricao": "AJUDA IR JOÃO (OCULOS)",
+      "valor": 150,
+      "data": "2025-06-14",
+      "origem": "SEDE"
+    },
+    {
+      "id": "8b3e",
+      "descricao": "VINHO CEIA (500ML)",
+      "valor": 11.5,
+      "data": "2025-06-14",
+      "origem": "SEDE"
+    },
+    {
+      "id": "89cf",
+      "descricao": "VALE PR DANIEL (PIX)",
+      "valor": 50,
+      "data": "2025-06-16",
+      "origem": "SEDE"
+    },
+    {
+      "id": "20f2",
+      "descricao": "VALE PR DANIEL (PIX)",
+      "valor": 50,
+      "data": "2025-06-17",
+      "origem": "SEDE"
+    },
+    {
+      "id": "6478",
+      "descricao": "VALE PR DANIEL (em mãos)",
+      "valor": 60,
+      "data": "2025-06-18",
+      "origem": "SEDE"
+    },
+    {
+      "id": "0d54",
+      "descricao": "vale pr daniel (pix)",
+      "valor": 100,
+      "data": "2025-06-19",
+      "origem": "SEDE"
+    },
+    {
+      "id": "5d26",
+      "descricao": "energias sede (maio e junho)",
+      "valor": 420.88,
+      "data": "2025-06-20",
+      "origem": "SEDE"
+    },
+    {
+      "id": "70e9",
+      "descricao": "VALE PR DANIEL (PIX)",
+      "valor": 200,
+      "data": "2025-06-20",
+      "origem": "SEDE"
+    },
+    {
+      "id": "aeb2",
+      "descricao": "VALE PR DANIEL (PIX)",
+      "valor": 130,
+      "data": "2025-06-23",
+      "origem": "SEDE"
+    },
+    {
+      "id": "7700",
+      "descricao": "energias casa pastoral",
+      "valor": 911.2,
+      "data": "2025-06-20",
+      "origem": "SEDE"
+    },
+    {
+      "id": "9d5a",
+      "descricao": "VALE PR DANIEL (PIX)",
+      "valor": 668.8,
+      "data": "2025-06-26",
+      "origem": "SEDE"
+    },
+    {
+      "id": "be64",
+      "descricao": "aguas (sede e casa pastoral)",
+      "valor": 331.01,
+      "data": "2025-06-27",
+      "origem": "SEDE"
+    },
+    {
+      "id": "a199",
+      "descricao": "VALE PR DANIEL (em mãos)",
+      "valor": 382.09,
+      "data": "2025-06-27",
+      "origem": "SEDE"
+    },
+    {
+      "id": "37ff",
+      "descricao": "material café ebd",
+      "valor": 82.9,
+      "data": "2025-06-28",
+      "origem": "SEDE"
+    },
+    {
+      "id": "fb6a",
+      "descricao": "fundo convencional",
+      "valor": 1423.45,
+      "data": "2025-06-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "a006",
+      "descricao": "agua",
+      "valor": 51.1,
+      "data": "2025-06-30",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "7b6e",
+      "descricao": "produto de limpeza vila",
+      "valor": 67.5,
+      "data": "2025-06-30",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "4fb0",
+      "descricao": "combustivel vila",
+      "valor": 100,
+      "data": "2025-06-30",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "ae41",
+      "descricao": "zeladora",
+      "valor": 200,
+      "data": "2025-06-30",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "da82",
+      "descricao": "zeladora",
+      "valor": 120,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "7562",
+      "descricao": "internet",
+      "valor": 80,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "dd3f",
+      "descricao": "gasolina",
+      "valor": 100,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "2181",
+      "descricao": "agua",
+      "valor": 57.6,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "4f2c",
+      "descricao": "energia",
+      "valor": 387.09,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "6761",
+      "descricao": "material de limpeza",
+      "valor": 77,
+      "data": "2025-06-30",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "44d3",
+      "descricao": "zeladora",
+      "valor": 200,
+      "data": "2025-06-30",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "f2e1",
+      "descricao": "material de limpeza",
+      "valor": 40,
+      "data": "2025-06-30",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "a3cd",
+      "descricao": "material instalação igreja",
+      "valor": 160,
+      "data": "2025-06-30",
+      "origem": "Rio Grande II"
+    },
+     {
+      "id": "jhfç",
+      "descricao": "prebenda obreiro",
+      "valor": 120,
+      "data": "2025-06-30",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "2057",
+      "descricao": "10% missões ",
+      "valor": 1700,
+      "data": "2025-06-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "781c",
+      "descricao": "mat expediente e consumo",
+      "valor": 83,
+      "data": "2025-06-30",
+      "origem": "SEDE"
+    }
+  ]
+}
