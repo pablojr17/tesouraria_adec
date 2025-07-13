@@ -118,6 +118,223 @@
       "valor": 28.65,
       "data": "2025-07-04",
       "origem": "SEDE"
+    },
+    {
+      "id": "1bc4",
+      "descricao": "jerzelita",
+      "valor": 400,
+      "data": "2025-07-05",
+      "origem": "SEDE"
+    },
+    {
+      "id": "f311",
+      "descricao": "maria romeiro",
+      "valor": 152,
+      "data": "2025-07-05",
+      "origem": "SEDE"
+    },
+    {
+      "id": "9fa4",
+      "descricao": "pb santiago",
+      "valor": 200,
+      "data": "2025-07-05",
+      "origem": "SEDE"
+    },
+    {
+      "id": "9898",
+      "descricao": "maria de lurdes",
+      "valor": 300,
+      "data": "2025-07-05",
+      "origem": "SEDE"
+    },
+    {
+      "id": "1b4b",
+      "descricao": "raiane",
+      "valor": 115,
+      "data": "2025-07-05",
+      "origem": "SEDE"
+    },
+    {
+      "id": "7f1a",
+      "descricao": "oferta conferencia (sabado)",
+      "valor": 114.5,
+      "data": "2025-07-05",
+      "origem": "SEDE"
+    },
+    {
+      "id": "7207",
+      "descricao": "pb silvio",
+      "valor": 143,
+      "data": "2025-07-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "a05b",
+      "descricao": "OFERTA CONFERENCIA (domingo manhã)",
+      "valor": 15.25,
+      "data": "2025-07-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "cee2",
+      "descricao": "jose mauricio",
+      "valor": 30,
+      "data": "2025-07-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "36a7",
+      "descricao": "ana souza",
+      "valor": 150,
+      "data": "2025-07-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "77b2",
+      "descricao": "iris ramos",
+      "valor": 100,
+      "data": "2025-07-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "ac4a",
+      "descricao": "marlene",
+      "valor": 300,
+      "data": "2025-07-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "d274",
+      "descricao": "eusitania",
+      "valor": 770,
+      "data": "2025-07-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "46c0",
+      "descricao": "rufina",
+      "valor": 165,
+      "data": "2025-07-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "fe78",
+      "descricao": "isabel serafim",
+      "valor": 150,
+      "data": "2025-07-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "4b9f",
+      "descricao": "OFERTA CONFERENCIA (domingo noite)",
+      "valor": 86.55,
+      "data": "2025-07-06",
+      "origem": "SEDE"
+    },
+    {
+      "id": "3b83",
+      "descricao": "pedro de jesus alves",
+      "valor": 250,
+      "data": "2025-07-07",
+      "origem": "SEDE"
+    },
+    {
+      "id": "89a2",
+      "descricao": "frederico de oliveira miranda",
+      "valor": 15,
+      "data": "2025-07-07",
+      "origem": "SEDE"
+    },
+    {
+      "id": "3494",
+      "descricao": "ronykleber",
+      "valor": 304.16,
+      "data": "2025-07-08",
+      "origem": "SEDE"
+    },
+    {
+      "id": "bb29",
+      "descricao": "edinete oliveira sales",
+      "valor": 574.3,
+      "data": "2025-07-09",
+      "origem": "SEDE"
+    },
+    {
+      "id": "4b50",
+      "descricao": "cleonice (ebd)",
+      "valor": 30,
+      "data": "2025-07-09",
+      "origem": "SEDE"
+    },
+    {
+      "id": "d861",
+      "descricao": "repasse missoes",
+      "valor": 1991,
+      "data": "2025-07-10",
+      "origem": "SEDE"
+    },
+    {
+      "id": "cbfa",
+      "descricao": "ana claudia teles andrade",
+      "valor": 100,
+      "data": "2025-07-10",
+      "origem": "SEDE"
+    },
+    {
+      "id": "efd7",
+      "descricao": "margarete fernandes",
+      "valor": 140,
+      "data": "2025-07-11",
+      "origem": "SEDE"
+    },
+    {
+      "id": "97bf",
+      "descricao": "oferta culto",
+      "valor": 22,
+      "data": "2025-07-11",
+      "origem": "SEDE"
+    },
+    {
+      "id": "5337",
+      "descricao": "mesak",
+      "valor": 200,
+      "data": "2025-07-12",
+      "origem": "SEDE"
+    },
+    {
+      "id": "5c2f",
+      "descricao": "vilma escobar",
+      "valor": 500,
+      "data": "2025-07-12",
+      "origem": "SEDE"
+    },
+    {
+      "id": "4e20",
+      "descricao": "neusa",
+      "valor": 150,
+      "data": "2025-07-12",
+      "origem": "SEDE"
+    },
+    {
+      "id": "00a8",
+      "descricao": "auta oliveira",
+      "valor": 150,
+      "data": "2025-07-12",
+      "origem": "SEDE"
+    },
+    {
+      "id": "465e",
+      "descricao": "tereza",
+      "valor": 301.8,
+      "data": "2025-07-12",
+      "origem": "SEDE"
+    },
+    {
+      "id": "7c75",
+      "descricao": "oferta culto ceia",
+      "valor": 74.25,
+      "data": "2025-07-12",
+      "origem": "SEDE"
     }
   ],
   "saidas": [
@@ -158,8 +375,8 @@
     },
     {
       "id": "bd84",
-      "descricao": "adiantamento zeladora",
-      "valor": 200,
+      "descricao": "zeladora",
+      "valor": 400,
       "data": "2025-07-04",
       "origem": "SEDE"
     },
@@ -254,6 +471,13 @@
       "data": "2025-07-06",
       "origem": "SEDE"
     },
+     {
+      "id": "asrn",
+      "descricao": "material de constução",
+      "valor": 808,
+      "data": "2025-07-06",
+      "origem": "Vila Santana"
+    },
     {
       "id": "91de",
       "descricao": "copos (lindalva)",
@@ -343,6 +567,27 @@
       "descricao": "aguas casa pastoral",
       "valor": 417.26,
       "data": "2025-07-11",
+      "origem": "SEDE"
+    },
+     {
+      "id": "asdg",
+      "descricao": "vinho ceia",
+      "valor": 26.50,
+      "data": "2025-07-12",
+      "origem": "SEDE"
+    },
+    {
+      "id": "sdfg",
+      "descricao": "vale pr daniel",
+      "valor": 1000,
+      "data": "2025-07-13",
+      "origem": "SEDE"
+    },
+    {
+      "id": "sdfg",
+      "descricao": "pr lucilo",
+      "valor": 600,
+      "data": "2025-07-13",
       "origem": "SEDE"
     }
   ]
