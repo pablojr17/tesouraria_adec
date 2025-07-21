@@ -335,6 +335,48 @@
       "valor": 74.25,
       "data": "2025-07-12",
       "origem": "SEDE"
+    },
+    {
+      "id": "ef15",
+      "descricao": "oferta culto",
+      "valor": 85.75,
+      "data": "2025-07-13",
+      "origem": "SEDE"
+    },
+    {
+      "id": "c8b2",
+      "descricao": "aux ivan",
+      "valor": 60,
+      "data": "2025-07-16",
+      "origem": "SEDE"
+    },
+    {
+      "id": "fc92",
+      "descricao": "oferta culto",
+      "valor": 7.8,
+      "data": "2025-07-16",
+      "origem": "SEDE"
+    },
+    {
+      "id": "0f3b",
+      "descricao": "oferta culto",
+      "valor": 18.75,
+      "data": "2025-07-18",
+      "origem": "SEDE"
+    },
+    {
+      "id": "71bb",
+      "descricao": "ana maria",
+      "valor": 35,
+      "data": "2025-07-20",
+      "origem": "SEDE"
+    },
+    {
+      "id": "28ae",
+      "descricao": "oferta culto",
+      "valor": 44.1,
+      "data": "2025-07-20",
+      "origem": "SEDE"
     }
   ],
   "saidas": [
@@ -471,12 +513,19 @@
       "data": "2025-07-06",
       "origem": "SEDE"
     },
-     {
+    {
       "id": "asrn",
       "descricao": "material de constução",
       "valor": 808,
       "data": "2025-07-06",
       "origem": "Vila Santana"
+    },
+    {
+      "id": "4fsg",
+      "descricao": "OFERTA culto de missões (caixa de missões)",
+      "valor": 86.55,
+      "data": "2025-07-06",
+      "origem": "SEDE"
     },
     {
       "id": "91de",
@@ -550,7 +599,7 @@
     },
     {
       "id": "075a",
-      "descricao": "energia sapa pastoral",
+      "descricao": "energia casa pastoral",
       "valor": 456.51,
       "data": "2025-07-11",
       "origem": "SEDE"
@@ -569,10 +618,10 @@
       "data": "2025-07-11",
       "origem": "SEDE"
     },
-     {
+    {
       "id": "asdg",
       "descricao": "vinho ceia",
-      "valor": 26.50,
+      "valor": 26.5,
       "data": "2025-07-12",
       "origem": "SEDE"
     },
@@ -588,6 +637,48 @@
       "descricao": "pr lucilo",
       "valor": 600,
       "data": "2025-07-13",
+      "origem": "SEDE"
+    },
+    {
+      "id": "62e3",
+      "descricao": "parcela bebedou (vilma)",
+      "valor": 259,
+      "data": "2025-07-13",
+      "origem": "SEDE"
+    },
+    {
+      "id": "aaa8",
+      "descricao": "gasolina (70 santiago e 50 valdete)",
+      "valor": 120,
+      "data": "2025-07-15",
+      "origem": "SEDE"
+    },
+    {
+      "id": "9506",
+      "descricao": "gasolina rio grande",
+      "valor": 60,
+      "data": "2025-07-17",
+      "origem": "SEDE"
+    },
+    {
+      "id": "2afa",
+      "descricao": "vale pr daniel",
+      "valor": 18.75,
+      "data": "2025-07-18",
+      "origem": "SEDE"
+    },
+    {
+     "id": "bkly",
+     "descricao": "gasolina luau jovens",
+     "valor": 80,
+     "data": "2025-07-19",
+     "origem": "SEDE"
+   },
+    {
+      "id": "5480",
+      "descricao": "vale pr daniel",
+      "valor": 79.1,
+      "data": "2025-07-20",
       "origem": "SEDE"
     }
   ]
