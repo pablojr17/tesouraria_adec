@@ -377,6 +377,55 @@
       "valor": 44.1,
       "data": "2025-07-20",
       "origem": "SEDE"
+    },
+    {
+      "id": "1ac0",
+      "descricao": "OFERTA CULTO",
+      "valor": 56,
+      "data": "2025-07-23",
+      "origem": "SEDE"
+    },
+    {
+      "id": "cde4",
+      "descricao": "DAVI",
+      "valor": 100,
+      "data": "2025-07-25",
+      "origem": "SEDE"
+    },
+    {
+      "id": "0e41",
+      "descricao": "OFERTA CULTO",
+      "valor": 9.35,
+      "data": "2025-07-25",
+      "origem": "SEDE"
+    },
+    {
+      "id": "bd3f",
+      "descricao": "NATALINO EBD",
+      "valor": 22,
+      "data": "2025-07-26",
+      "origem": "SEDE"
+    },
+    {
+      "id": "07c7",
+      "descricao": "TATIANA EBD",
+      "valor": 10,
+      "data": "2025-07-26",
+      "origem": "SEDE"
+    },
+    {
+      "id": "2e5a",
+      "descricao": "FIRMINO",
+      "valor": 150,
+      "data": "2025-07-27",
+      "origem": "SEDE"
+    },
+    {
+      "id": "8704",
+      "descricao": "OFERTA CULTO",
+      "valor": 31.05,
+      "data": "2025-07-27",
+      "origem": "SEDE"
     }
   ],
   "saidas": [
@@ -668,17 +717,31 @@
       "origem": "SEDE"
     },
     {
-     "id": "bkly",
-     "descricao": "gasolina luau jovens",
-     "valor": 80,
-     "data": "2025-07-19",
-     "origem": "SEDE"
-   },
+      "id": "bkly",
+      "descricao": "gasolina luau jovens",
+      "valor": 80,
+      "data": "2025-07-19",
+      "origem": "SEDE"
+    },
     {
       "id": "5480",
       "descricao": "vale pr daniel",
       "valor": 79.1,
       "data": "2025-07-20",
+      "origem": "SEDE"
+    },
+    {
+      "id": "ac81",
+      "descricao": "VALE PR DANIEL",
+      "valor": 56,
+      "data": "2025-07-23",
+      "origem": "SEDE"
+    },
+    {
+      "id": "c972",
+      "descricao": "VALE PR DANIEL",
+      "valor": 109.35,
+      "data": "2025-07-25",
       "origem": "SEDE"
     }
   ]
