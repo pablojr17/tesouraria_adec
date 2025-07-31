@@ -426,6 +426,62 @@
       "valor": 31.05,
       "data": "2025-07-27",
       "origem": "SEDE"
+    },
+    {
+      "id": "5fc2",
+      "descricao": "luiz paulo",
+      "valor": 200,
+      "data": "2025-07-28",
+      "origem": "SEDE"
+    },
+    {
+      "id": "4650",
+      "descricao": "mizael",
+      "valor": 162.5,
+      "data": "2025-07-29",
+      "origem": "SEDE"
+    },
+    {
+      "id": "99a2",
+      "descricao": "oferta culto",
+      "valor": 4.95,
+      "data": "2025-07-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "c02d",
+      "descricao": "eurides chagas",
+      "valor": 150,
+      "data": "2025-07-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "a260",
+      "descricao": "maria aparecida",
+      "valor": 250,
+      "data": "2025-07-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "083f",
+      "descricao": "bela",
+      "valor": 152,
+      "data": "2025-07-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "750a",
+      "descricao": "belinha (ebd)",
+      "valor": 10,
+      "data": "2025-07-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "9e63",
+      "descricao": "eurides",
+      "valor": 12,
+      "data": "2025-07-30",
+      "origem": "SEDE"
     }
   ],
   "saidas": [
@@ -742,6 +798,20 @@
       "descricao": "VALE PR DANIEL",
       "valor": 109.35,
       "data": "2025-07-25",
+      "origem": "SEDE"
+    },
+    {
+      "id": "f50d",
+      "descricao": "vale pr daniel",
+      "valor": 452,
+      "data": "2025-07-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "cebf",
+      "descricao": "gasolina irma luzimar",
+      "valor": 100,
+      "data": "2025-07-30",
       "origem": "SEDE"
     }
   ]
