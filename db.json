@@ -381,7 +381,7 @@
     {
       "id": "1ac0",
       "descricao": "OFERTA CULTO",
-      "valor": 56,
+      "valor": 56.25,
       "data": "2025-07-23",
       "origem": "SEDE"
     },
@@ -481,6 +481,76 @@
       "descricao": "eurides",
       "valor": 12,
       "data": "2025-07-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "e208",
+      "descricao": "cleonice souza",
+      "valor": 502,
+      "data": "2025-07-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "3129",
+      "descricao": "ronykleber",
+      "valor": 566,
+      "data": "2025-07-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "c36a",
+      "descricao": "ana claudia",
+      "valor": 540,
+      "data": "2025-07-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "4c24",
+      "descricao": "edinete",
+      "valor": 560,
+      "data": "2025-07-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "723d",
+      "descricao": "marlete",
+      "valor": 570,
+      "data": "2025-07-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "3ab4",
+      "descricao": "dc pablo",
+      "valor": 100,
+      "data": "2025-07-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "2eb9",
+      "descricao": "amauri",
+      "valor": 114,
+      "data": "2025-07-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "5a88",
+      "descricao": "josiene",
+      "valor": 60,
+      "data": "2025-07-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "2891",
+      "descricao": "pr daniel (ebd)",
+      "valor": 32,
+      "data": "2025-07-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "3669",
+      "descricao": "izaide",
+      "valor": 10,
+      "data": "2025-07-31",
       "origem": "SEDE"
     }
   ],
@@ -812,6 +882,20 @@
       "descricao": "gasolina irma luzimar",
       "valor": 100,
       "data": "2025-07-30",
+      "origem": "SEDE"
+    },
+    {
+      "id": "1f54",
+      "descricao": "fundo convencional",
+      "valor": 1019.55,
+      "data": "2025-07-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "ea7c",
+      "descricao": "combustivel rio grande",
+      "valor": 50,
+      "data": "2025-07-31",
       "origem": "SEDE"
     }
   ]
