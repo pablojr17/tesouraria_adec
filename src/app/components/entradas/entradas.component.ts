@@ -3,24 +3,26 @@ import { LancamentoService } from '../../service/lancamento.service';
 import { Lancamento } from '../../model/lancamento.model';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import {entradas} from '../../../../db.json'
+import { formatDate } from '@angular/common';
+import { entradas } from '../../../../db.json';
 @Component({
   selector: 'app-entradas',
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './entradas.component.html',
-  styleUrl: './entradas.component.scss'
+  styleUrl: './entradas.component.scss',
 })
-export class EntradasComponent implements OnInit { // Implement OnInit
+export class EntradasComponent implements OnInit {
+  // Implement OnInit
 
   // Use specific names for 'entrada' related input fields
   descricaoEntrada: string = '';
   valorEntrada: number = 0;
   dataEntrada: string = '';
   entradas: Lancamento[] = entradas; // Array to hold your income objects
-  isLocalhost: boolean = true
-origem: string = '';
-origemSelecionada: string = 'TODOS';
+  isLocalhost: boolean = true;
+  origem: string = '';
+  origemSelecionada: string = 'TODOS';
   constructor(private service: LancamentoService) {
     // Constructor is primarily for dependency injection.
     // Initial data fetching should ideally be in ngOnInit.
@@ -29,23 +31,32 @@ origemSelecionada: string = 'TODOS';
   ngOnInit(): void {
     // Fetch initial data when the component initializes
     this.atualizarLista();
-    this.isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-
+    this.isLocalhost =
+      window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1';
   }
 
-  adicionarEntrada(): void { // Renamed for clarity and consistency
+  adicionarEntrada(): void {
+    // Renamed for clarity and consistency
     // Validate inputs: ensure all fields are filled and value is positive
-    if (!this.descricaoEntrada || this.valorEntrada <= 0 || !this.dataEntrada || !this.origem) {
+    if (
+      !this.descricaoEntrada ||
+      this.valorEntrada <= 0 ||
+      !this.dataEntrada ||
+      !this.origem
+    ) {
       // Use a more user-friendly alert or a modal instead of browser's alert in a real app
-      alert('Por favor, preencha todos os campos da entrada corretamente (descrição, valor maior que 0 e data).');
+      alert(
+        'Por favor, preencha todos os campos da entrada corretamente (descrição, valor maior que 0 e data).'
+      );
       return;
     }
 
     const novaEntrada: Lancamento = {
       descricao: this.descricaoEntrada, // Use the specific input variable
-      valor: this.valorEntrada,         // Use the specific input variable
-      data: this.dataEntrada,           // Use the specific input variable
-      origem: this.origem,           // Use the specific input variable
+      valor: this.valorEntrada, // Use the specific input variable
+      data: this.dataEntrada, // Use the specific input variable
+      origem: this.origem, // Use the specific input variable
     };
 
     // Use the service to add the new income entry
@@ -55,33 +66,61 @@ origemSelecionada: string = 'TODOS';
         this.descricaoEntrada = '';
         this.valorEntrada = 0;
         this.dataEntrada = '';
-        this.origem = ''
+        this.origem = '';
         // Refresh the list of income entries from the service
         this.atualizarLista();
       },
       error: (err) => {
         console.error('Erro ao adicionar entrada:', err);
         alert('Ocorreu um erro ao adicionar a entrada. Tente novamente.');
-      }
+      },
     });
   }
 
-atualizarLista(): void {
- this.entradas = entradas;
-}
+  atualizarLista(): void {
+    this.entradas = entradas;
+  }
 
   /**
    * Calculates the total value of all income entries.
    * This method is used in the HTML to display the sum in the table footer.
    */
-getTotalEntradas(): number {
-  return this.entradasFiltradas().reduce((total, entrada) => total + entrada.valor, 0);
+  getTotalEntradas(): number {
+    return this.entradasFiltradas().reduce(
+      (total, entrada) => total + entrada.valor,
+      0
+    );
+  }
+
+  entradasFiltradas() {
+    if (this.origemSelecionada === 'TODOS') {
+      return this.entradas;
+    }
+    return this.entradas.filter((e) => e.origem === this.origemSelecionada);
+  }
+
+  getEntradasAgrupadasPorData() {
+    const agrupado: { [data: string]: any[] } = {};
+
+    this.entradasFiltradas().forEach((entrada) => {
+      // Formatando a data para uma string uniforme, ex: '2025-08-03'
+      const dataStr = formatDate(entrada.data, 'yyyy-MM-dd', 'pt-BR');
+      if (!agrupado[dataStr]) {
+        agrupado[dataStr] = [];
+      }
+      agrupado[dataStr].push(entrada);
+    });
+
+    return agrupado;
+  }
+
+  getDatasOrdenadas(): string[] {
+  return Object.keys(this.getEntradasAgrupadasPorData()).sort();
 }
 
-entradasFiltradas() {
-  if (this.origemSelecionada === 'TODOS') {
-    return this.entradas;
-  }
-  return this.entradas.filter(e => e.origem === this.origemSelecionada);
+calcularTotalPorData(data: string): number {
+  const entradasDoDia = this.getEntradasAgrupadasPorData()[data] || [];
+  return entradasDoDia.reduce((total, entrada) => total + entrada.valor, 0);
 }
+
 }

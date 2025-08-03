@@ -64,26 +64,42 @@
           <th>Data</th>
           <th>Descrição</th>
           <th>Valor</th>
-          <th style="text-align: center;">Origem</th>
+          <th style="text-align: center">Origem</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let entrada of entradasFiltradas()">
-          <td>{{ entrada.data | date : "dd/MM/yyyy" }}</td>
-          <td>{{ entrada.descricao.toUpperCase() }}</td>
-          <td class="income-value">
-            {{
-              entrada.valor | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
-            }}
-          </td>
-          <td style="text-align: center;">{{ entrada.origem }}</td>
-        </tr>
+        <ng-container *ngFor="let data of getDatasOrdenadas()">
+          <tr *ngFor="let entrada of getEntradasAgrupadasPorData()[data]">
+            <td>{{ entrada.data | date : "dd/MM/yyyy" }}</td>
+            <td>{{ entrada.descricao.toUpperCase() }}</td>
+            <td class="income-value">
+              {{
+                entrada.valor | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+              }}
+            </td>
+            <td style="text-align: center">{{ entrada.origem }}</td>
+          </tr>
+          <tr class="total-row">
+            <td colspan="2">
+              <strong>Total do dia {{ data | date : "dd/MM/yyyy" }}</strong>
+            </td>
+            <td class="income-value">
+              <strong>{{
+                calcularTotalPorData(data)
+                  | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+              }}</strong>
+            </td>
+            <td></td>
+          </tr>
+        </ng-container>
+
         <tr *ngIf="entradasFiltradas().length === 0">
           <td colspan="4" class="no-entries">
             Nenhuma entrada registrada ainda.
           </td>
         </tr>
       </tbody>
+
       <tfoot>
         <tr>
           <td colspan="3" class="total-label">Total de Entradas:</td>
