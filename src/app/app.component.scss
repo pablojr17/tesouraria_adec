@@ -22,7 +22,6 @@ body {
 .app-header {
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 25px 40px;
   margin-bottom: 30px;
   width: 100%; /* Take full width of its parent */
@@ -104,14 +103,12 @@ body {
 
 .tab-navigation button:hover {
   background-color: #dce1e3;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tab-navigation button.active-tab {
   background-color: #3498db; /* Primary color for the active tab */
   color: white;
   font-weight: bold;
-  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
   transform: translateY(-2px); /* Slight lift for active tab */
 }
 
@@ -119,7 +116,6 @@ body {
 .content-area {
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   width: 100%; /* Take full width of its parent */
   box-sizing: border-box;
 }
@@ -155,5 +151,16 @@ body {
 
   .content-area {
     padding: 8px;
+  }
+}
+
+@media print {
+  .tab-navigation {
+    display: none !important;
+  }
+
+  div {
+    border: none !important;
+    box-shadow: none;
   }
 }
