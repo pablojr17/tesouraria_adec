@@ -163,4 +163,9 @@ body {
     border: none !important;
     box-shadow: none;
   }
+
+  .app-header {
+    page-break-after: always;
+    break-after: page;
+  }
 }
