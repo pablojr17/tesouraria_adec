@@ -37,6 +37,25 @@
         <option value="Jupagua">Jupagua</option>
       </select>
     </div>
+    <div class="input-group">
+      <select [(ngModel)]="categoriaSaida">
+        <option value="" disabled selected>Selecione a categoria</option>
+        <option value="Alimentação">Alimentação</option>
+        <option value="Energia">Energia</option>
+        <option value="Água">Água</option>
+        <option value="Internet">Internet</option>
+        <option value="Missões">Missões</option>
+        <option value="Prebenda Pastoral">Prebenda Pastoral</option>
+        <option value="Fundo Convencional">Fundo Convencional</option>
+        <option value="Material de Construção">Material de Construção</option>
+        <option value="Zeladora">Zeladora</option>
+        <option value="Ajuda Social">Ajuda Social</option>
+        <option value="Outros Gastos">Outros Gastos</option>
+        <option value="Combustível">Combustível</option>
+        <option value="Material de Limpeza">Material de Limpeza</option>
+        <option value="Material de Expediente">Material de Expediente</option>
+      </select>
+    </div>
 
     <button (click)="adicionarSaida()">Adicionar Saída</button>
   </div>
@@ -67,28 +86,48 @@
         <tr>
           <th>Data</th>
           <th>Descrição</th>
+          <th style="text-align: center">Origem</th>
+          <th>Categoria</th>
           <th>Valor</th>
-          <th style="text-align: center;">Origem</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let saida of saidasFiltradas()">
-          <td>{{ saida.data | date : "dd/MM/yyyy" }}</td>
-          <td>{{ saida.descricao.toUpperCase() }}</td>
-          <td class="expense-value">
-            {{ saida.valor | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR" }}
-          </td>
-          <td style="text-align: center;">{{ saida.origem }}</td>
-        </tr>
+        <ng-container *ngFor="let grupo of getSaidasAgrupadasPorCategoria()">
+          <tr class="category-row">
+            <td colspan="5" class="category-header">
+              Categoria: <strong>{{ grupo[0] }}</strong>
+            </td>
+          </tr>
+          <tr *ngFor="let saida of grupo[1]">
+            <td>{{ saida.data | date : "dd/MM/yyyy" }}</td>
+            <td>{{ saida.descricao.toUpperCase() }}</td>
+            <td style="text-align: center">{{ saida.origem }}</td>
+            <td>{{ saida.categoria || "Sem categoria" }}</td>
+            <td class="expense-value">
+              {{
+                saida.valor | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+              }}
+            </td>
+          </tr>
+          <tr class="category-total">
+            <td colspan="4" class="total-label">Total da categoria:</td>
+            <td class="expense-value total-value">
+              {{
+                getTotalPorCategoria(grupo[1])
+                  | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+              }}
+            </td>
+          </tr>
+        </ng-container>
         <tr *ngIf="saidasFiltradas().length === 0">
-          <td colspan="4" class="no-entries">
+          <td colspan="5" class="no-entries">
             Nenhuma saída registrada ainda.
           </td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="3" class="total-label">Total de Saídas:</td>
+          <td colspan="4" class="total-label">Total de Saídas:</td>
           <td class="expense-value total-value">
             {{
               getTotalSaidas() | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"

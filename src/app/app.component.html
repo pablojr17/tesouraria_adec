@@ -1,7 +1,119 @@
 <div class="main-container">
   <header class="app-header">
-    <h1>ADEC</h1>
-    <h2 class="saldo-display">SALDO: {{ saldo | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</h2>
+    <div class="head">
+      <h2 class="titulo-relatorio">ASSEMBLEIA DE DEUS - COTEGIPE</h2>
+      <div class="logo"></div>
+    </div>
+    <h3 style="font-size: 1em;">RELATÓRIO FINANCEIRO JULHO DE 2025</h3>
+    <table class="saldo-table">
+      <tbody>
+        <tr>
+          <td>SALDO ANTERIOR:</td>
+          <td>
+            {{ 1401.09 | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR" }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="saldo-table">
+      <thead>
+        <tr>
+          <th colspan="3">RESUMO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Local</strong></td>
+          <td>Entradas</td>
+          <td>Saídas</td>
+        </tr>
+        <tr>
+          <td>Sede</td>
+          <td>
+            {{ entradasSede | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR" }}
+          </td>
+          <td>
+            {{ saidasSede | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR" }}
+          </td>
+        </tr>
+        <tr>
+          <td>Jupaguá</td>
+          <td>
+            {{
+              entradasJupagua | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            }}
+          </td>
+          <td>
+            {{
+              saidasJupagua | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            }}
+          </td>
+        </tr>
+        <tr>
+          <td>Vila Santana</td>
+          <td>
+            {{
+              entradasVilaSantana
+                | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            }}
+          </td>
+          <td>
+            {{
+              saidasVilaSantana
+                | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            }}
+          </td>
+        </tr>
+        <tr>
+          <td>Rio Grande 2</td>
+          <td>
+            {{
+              entradasRioGrande2
+                | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            }}
+          </td>
+          <td>
+            {{
+              saidasRioGrande2 | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            }}
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Total mês atual</strong></td>
+          <td>
+            {{
+              totalEntradas | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            }}
+          </td>
+          <td>
+            {{ totalSaidas | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR" }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="saldo-table">
+      <tbody>
+        <tr>
+          <td><strong>TOTAL MÊS + SALDO ANTERIOR:</strong></td>
+          <td>
+            <strong>{{
+              totalEntradas + 1401.09
+                | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            }}</strong>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>SALDO:</strong></td>
+          <td>
+            <strong>{{
+              saldo | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            }}</strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </header>
 
   <div class="tab-navigation">

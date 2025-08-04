@@ -13,9 +13,6 @@ import { saidas } from '../../../../db.json';
   styleUrl: './saidas.component.scss',
 })
 export class SaidasComponent implements OnInit {
-  // Implement OnInit
-
-  // Use specific names for 'saida' related input fields
   descricaoSaida: string = '';
   valorSaida: number = 0;
   dataSaida: string = '';
@@ -24,6 +21,7 @@ export class SaidasComponent implements OnInit {
   origemSelecionada: string = 'TODOS';
 
   saidas: Lancamento[] = saidas;
+  categoriaSaida: string = '';
 
   constructor(private lancamentoService: LancamentoService) {
     // Constructor is generally for dependency injection.
@@ -40,10 +38,14 @@ export class SaidasComponent implements OnInit {
   }
 
   adicionarSaida(): void {
-    // Check for valid input
-    if (!this.descricaoSaida || this.valorSaida <= 0 || !this.dataSaida) {
+    if (
+      !this.descricaoSaida ||
+      this.valorSaida <= 0 ||
+      !this.dataSaida ||
+      !this.categoriaSaida
+    ) {
       alert(
-        'Por favor, preencha todos os campos da saída corretamente (descrição, valor maior que 0 e data).'
+        'Por favor, preencha todos os campos da saída corretamente (descrição, valor, data e categoria).'
       );
       return;
     }
@@ -53,16 +55,15 @@ export class SaidasComponent implements OnInit {
       valor: this.valorSaida,
       data: this.dataSaida,
       origem: this.origem,
+      categoria: this.categoriaSaida,
     };
 
-    // Use the service to add the new expense
     this.lancamentoService.addSaida(novaSaida).subscribe({
       next: () => {
-        // Clear input fields on successful addition
         this.descricaoSaida = '';
         this.valorSaida = 0;
         this.dataSaida = '';
-        // Refresh the list of expenses from the service
+        this.categoriaSaida = '';
         this.atualizarSaidas();
       },
       error: (err) => {
@@ -88,5 +89,23 @@ export class SaidasComponent implements OnInit {
       (total, saida) => total + saida.valor,
       0
     );
+  }
+
+  getSaidasAgrupadasPorCategoria() {
+    const agrupadas: { [categoria: string]: any[] } = {};
+
+    for (const saida of this.saidasFiltradas()) {
+      const categoria = saida.categoria || 'Sem categoria';
+      if (!agrupadas[categoria]) {
+        agrupadas[categoria] = [];
+      }
+      agrupadas[categoria].push(saida);
+    }
+
+    return Object.entries(agrupadas); // [ [categoria, [saidas]], ... ]
+  }
+
+  getTotalPorCategoria(categoriaSaidas: any[]): number {
+    return categoriaSaidas.reduce((soma, s) => soma + s.valor, 0);
   }
 }

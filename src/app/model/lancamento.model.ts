@@ -3,4 +3,5 @@ export interface Lancamento {
   descricao: string;
   valor: number;
   origem: string;
+  categoria?: string;
 }

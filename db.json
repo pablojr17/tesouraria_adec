@@ -1,13 +1,6 @@
 {
   "entradas": [
     {
-      "id": "4133",
-      "descricao": "saldo anterior",
-      "valor": 1401.09,
-      "data": "2025-07-01",
-      "origem": "SEDE"
-    },
-    {
       "id": "c719",
       "descricao": "viviane vasco",
       "valor": 727,
@@ -552,6 +545,83 @@
       "valor": 10,
       "data": "2025-07-31",
       "origem": "SEDE"
+    },
+    {
+      "id": "11e8",
+      "descricao": "dizimos rio grande 2",
+      "valor": 565,
+      "data": "2025-07-31",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "51e0",
+      "descricao": "ofertas rio grande 2",
+      "valor": 129,
+      "data": "2025-07-31",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "efb9",
+      "descricao": "acy",
+      "valor": 280,
+      "data": "2025-07-03",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "e45e",
+      "descricao": "neuracy romeiro",
+      "valor": 150,
+      "data": "2025-07-06",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "d3a5",
+      "descricao": "valdomiro severino",
+      "valor": 150,
+      "data": "2025-07-15",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "f966",
+      "descricao": "carmita",
+      "valor": 100,
+      "data": "2025-07-29",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "0993",
+      "descricao": "valdomiro severino",
+      "valor": 152,
+      "data": "2025-07-29",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "a40b",
+      "descricao": "dc kailquer vasco",
+      "valor": 300,
+      "data": "2025-07-31",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "05d7",
+      "descricao": "ofertas vila",
+      "valor": 132.7,
+      "data": "2025-07-31",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "0f19",
+      "descricao": "dizimos jupagua",
+      "valor": 810,
+      "data": "2025-07-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "5c15",
+      "descricao": "ofertas jupagua",
+      "valor": 216,
+      "data": "2025-07-31",
+      "origem": "Jupagua"
     }
   ],
   "saidas": [
@@ -560,343 +630,417 @@
       "descricao": "limpa ceramica",
       "valor": 31.4,
       "data": "2025-07-03",
-      "origem": "SEDE"
-    },
-    {
-      "id": "e508",
-      "descricao": "vale pr daniel",
-      "valor": 300,
-      "data": "2025-07-03",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Material de Limpeza"
     },
     {
       "id": "f1f6",
       "descricao": "combustivel pb amilton",
       "valor": 555,
       "data": "2025-07-04",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Combustível"
     },
     {
       "id": "3b4d",
       "descricao": "frangos (arides)",
       "valor": 275.54,
       "data": "2025-07-04",
-      "origem": "SEDE"
-    },
-    {
-      "id": "26fd",
-      "descricao": "vale pr daniel",
-      "valor": 60,
-      "data": "2025-07-04",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Alimentação"
     },
     {
       "id": "bd84",
       "descricao": "zeladora",
       "valor": 400,
       "data": "2025-07-04",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Zeladora"
     },
     {
       "id": "1401",
       "descricao": "material almoço (pb amilton)",
       "valor": 276.25,
       "data": "2025-07-04",
-      "origem": "SEDE"
-    },
-    {
-      "id": "37ad",
-      "descricao": "vale pr daniel",
-      "valor": 500,
-      "data": "2025-07-04",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Alimentação"
     },
     {
       "id": "5666",
       "descricao": "material lindalva",
       "valor": 194.9,
       "data": "2025-07-05",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Alimentação"
     },
     {
       "id": "a6ed",
       "descricao": "goiabas",
       "valor": 10,
       "data": "2025-07-05",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Alimentação"
     },
     {
       "id": "7143",
       "descricao": "embalagens",
       "valor": 79.5,
       "data": "2025-07-05",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Material de Expediente"
     },
     {
       "id": "2ae0",
       "descricao": "galinhas (ivan)",
       "valor": 200,
       "data": "2025-07-05",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Alimentação"
     },
     {
       "id": "625f",
       "descricao": "limões e pepino (tomás)",
       "valor": 15,
       "data": "2025-07-05",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Alimentação"
     },
     {
       "id": "7173",
       "descricao": "material cassio",
       "valor": 86.3,
       "data": "2025-07-05",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Alimentação"
     },
     {
       "id": "80b4",
       "descricao": "flores e vaso (luzimar)",
       "valor": 473.75,
       "data": "2025-07-06",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Outros Gastos"
     },
     {
       "id": "8a0b",
       "descricao": "tomates",
       "valor": 40,
       "data": "2025-07-06",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Alimentação"
     },
     {
       "id": "359d",
       "descricao": "alfaces",
       "valor": 24,
       "data": "2025-07-06",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Alimentação"
     },
     {
       "id": "4fd9",
       "descricao": "oferta pb amilton",
       "valor": 1000,
       "data": "2025-07-06",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Ajuda Social"
     },
     {
       "id": "c3d4",
       "descricao": "pizza (jantar pb amilton)",
       "valor": 255,
       "data": "2025-07-06",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Alimentação"
     },
     {
       "id": "asrn",
       "descricao": "material de constução",
       "valor": 808,
       "data": "2025-07-06",
-      "origem": "Vila Santana"
+      "origem": "Vila Santana",
+      "categoria": "Material de Construção"
     },
     {
       "id": "4fsg",
       "descricao": "OFERTA culto de missões (caixa de missões)",
       "valor": 86.55,
       "data": "2025-07-06",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Ajuda Social"
     },
     {
       "id": "91de",
       "descricao": "copos (lindalva)",
       "valor": 61.6,
       "data": "2025-07-08",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Material de Expediente"
     },
     {
       "id": "c34e",
       "descricao": "ata",
       "valor": 487.14,
       "data": "2025-07-08",
-      "origem": "SEDE"
-    },
-    {
-      "id": "b139",
-      "descricao": "vale pr daniel",
-      "valor": 1100,
-      "data": "2025-07-09",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Material de Expediente"
     },
     {
       "id": "46d0",
       "descricao": "copos e refris (seba)",
       "valor": 63.5,
       "data": "2025-07-09",
-      "origem": "SEDE"
-    },
-    {
-      "id": "dfe2",
-      "descricao": "vale pr daniel",
-      "valor": 370,
-      "data": "2025-07-09",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Alimentação"
     },
     {
       "id": "2c93",
       "descricao": "microfone (amauri)",
       "valor": 119,
       "data": "2025-07-10",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Outros Gastos"
     },
     {
       "id": "b208",
       "descricao": "radio",
       "valor": 315,
       "data": "2025-07-10",
-      "origem": "SEDE"
-    },
-    {
-      "id": "cdbf",
-      "descricao": "vale pr daniel",
-      "valor": 150,
-      "data": "2025-07-10",
-      "origem": "SEDE"
-    },
-    {
-      "id": "jfgv",
-      "descricao": "vale pr daniel",
-      "valor": 200,
-      "data": "2025-07-11",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Outros Gastos"
     },
     {
       "id": "91e8",
       "descricao": "energia sede",
       "valor": 176.01,
       "data": "2025-07-11",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Energia"
     },
     {
       "id": "075a",
       "descricao": "energia casa pastoral",
       "valor": 456.51,
       "data": "2025-07-11",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Energia"
     },
     {
       "id": "5da9",
       "descricao": "aguas sede",
       "valor": 261.92,
       "data": "2025-07-11",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Agua"
     },
     {
       "id": "6c54",
       "descricao": "aguas casa pastoral",
       "valor": 417.26,
       "data": "2025-07-11",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Agua"
     },
     {
       "id": "asdg",
       "descricao": "vinho ceia",
       "valor": 26.5,
       "data": "2025-07-12",
-      "origem": "SEDE"
-    },
-    {
-      "id": "sdfg",
-      "descricao": "vale pr daniel",
-      "valor": 1000,
-      "data": "2025-07-13",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Outros Gastos"
     },
     {
       "id": "sdfg",
       "descricao": "pr lucilo",
       "valor": 600,
       "data": "2025-07-13",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Outros Gastos"
     },
     {
       "id": "62e3",
-      "descricao": "parcela bebedou (vilma)",
+      "descricao": "parcela bebedouro (vilma)",
       "valor": 259,
       "data": "2025-07-13",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Outros Gastos"
     },
     {
       "id": "aaa8",
       "descricao": "gasolina (70 santiago e 50 valdete)",
       "valor": 120,
       "data": "2025-07-15",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Combustível"
     },
     {
       "id": "9506",
       "descricao": "gasolina rio grande",
       "valor": 60,
       "data": "2025-07-17",
-      "origem": "SEDE"
-    },
-    {
-      "id": "2afa",
-      "descricao": "vale pr daniel",
-      "valor": 18.75,
-      "data": "2025-07-18",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Combustível"
     },
     {
       "id": "bkly",
       "descricao": "gasolina luau jovens",
       "valor": 80,
       "data": "2025-07-19",
-      "origem": "SEDE"
-    },
-    {
-      "id": "5480",
-      "descricao": "vale pr daniel",
-      "valor": 79.1,
-      "data": "2025-07-20",
-      "origem": "SEDE"
-    },
-    {
-      "id": "ac81",
-      "descricao": "VALE PR DANIEL",
-      "valor": 56,
-      "data": "2025-07-23",
-      "origem": "SEDE"
-    },
-    {
-      "id": "c972",
-      "descricao": "VALE PR DANIEL",
-      "valor": 109.35,
-      "data": "2025-07-25",
-      "origem": "SEDE"
-    },
-    {
-      "id": "f50d",
-      "descricao": "vale pr daniel",
-      "valor": 452,
-      "data": "2025-07-30",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Combustível"
     },
     {
       "id": "cebf",
       "descricao": "gasolina irma luzimar",
       "valor": 100,
       "data": "2025-07-30",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Combustível"
     },
     {
       "id": "1f54",
       "descricao": "fundo convencional",
       "valor": 1019.55,
       "data": "2025-07-31",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Fundo Convencional"
     },
     {
       "id": "ea7c",
       "descricao": "combustivel rio grande",
       "valor": 50,
       "data": "2025-07-31",
-      "origem": "SEDE"
+      "origem": "SEDE",
+      "categoria": "Combustível"
+    },
+    {
+      "id": "3b86",
+      "descricao": "zeladora",
+      "valor": 200,
+      "data": "2025-07-31",
+      "origem": "Rio Grande II",
+      "categoria": "Zeladora"
+    },
+    {
+      "id": "c266",
+      "descricao": "material de limpeza",
+      "valor": 100,
+      "data": "2025-07-31",
+      "origem": "Rio Grande II",
+      "categoria": "Material de Limpeza"
+    },
+    {
+      "id": "d5a6",
+      "descricao": "prebenda obreiro",
+      "valor": 197,
+      "data": "2025-07-31",
+      "origem": "Rio Grande II",
+      "categoria": "Prebenda Pastoral"
+    },
+    {
+      "id": "136c",
+      "descricao": "energia",
+      "valor": 71.5,
+      "data": "2025-02-25",
+      "origem": "Vila Santana",
+      "categoria": "Energia"
+    },
+    {
+      "id": "5d24",
+      "descricao": "agua",
+      "valor": 51.1,
+      "data": "2025-07-25",
+      "origem": "Vila Santana",
+      "categoria": "Agua"
+    },
+    {
+      "id": "ae61",
+      "descricao": "zeladora",
+      "valor": 200,
+      "data": "2025-07-31",
+      "origem": "Vila Santana",
+      "categoria": "Zeladora"
+    },
+    {
+      "id": "92e0",
+      "descricao": "gasolina",
+      "valor": 120,
+      "data": "2025-07-23",
+      "origem": "Vila Santana",
+      "categoria": "Combustível"
+    },
+    {
+      "id": "cd1f",
+      "descricao": "zeladora",
+      "valor": 120,
+      "data": "2025-07-31",
+      "origem": "Jupagua",
+      "categoria": "Zeladora"
+    },
+    {
+      "id": "25d2",
+      "descricao": "agua",
+      "valor": 52.24,
+      "data": "2025-07-31",
+      "origem": "Jupagua",
+      "categoria": "Agua"
+    },
+    {
+      "id": "573f",
+      "descricao": "energia",
+      "valor": 289.76,
+      "data": "2025-07-31",
+      "origem": "Jupagua",
+      "categoria": "Energia"
+    },
+    {
+      "id": "d9d1",
+      "descricao": "internet",
+      "valor": 80,
+      "data": "2025-07-20",
+      "origem": "Jupagua",
+      "categoria": "Internet"
+    },
+    {
+      "id": "b380",
+      "descricao": "combustivel",
+      "valor": 100,
+      "data": "2025-07-31",
+      "origem": "Jupagua",
+      "categoria": "Combustível"
+    },
+    {
+      "id": "d90f",
+      "descricao": "10% missões",
+      "valor": 1847.06,
+      "data": "2025-07-31",
+      "origem": "SEDE",
+      "categoria": "Missões"
+    },
+    {
+      "id": "b144",
+      "descricao": "merenda",
+      "valor": 50,
+      "data": "2025-07-31",
+      "origem": "Jupagua",
+      "categoria": "Alimentação"
+    },
+    {
+      "id": "6d19",
+      "descricao": "prebenda obreiro",
+      "valor": 334,
+      "data": "2025-07-31",
+      "origem": "Jupagua",
+      "categoria": "Prebenda Pastoral"
+    },
+
+    {
+      "id": "d9c7",
+      "descricao": "prebenda pastor daniel",
+      "valor": 4395.2,
+      "data": "2025-07-31",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
     }
   ]
 }
