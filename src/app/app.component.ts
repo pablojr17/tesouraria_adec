@@ -67,7 +67,7 @@ atualizarSaldo() {
 
   this.totalEntradas = this.entradas.reduce((acc, e) => acc + e.valor, 0);
   this.totalSaidas = this.saidas.reduce((acc, s) => acc + s.valor, 0);
-  this.saldo = this.totalEntradas - this.totalSaidas;
+  this.saldo = (this.totalEntradas + 1409.04) - this.totalSaidas;
 }
 
   atualizarSaidas(): void {

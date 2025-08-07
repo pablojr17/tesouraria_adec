@@ -743,7 +743,7 @@
       "valor": 1000,
       "data": "2025-07-06",
       "origem": "SEDE",
-      "categoria": "Ajuda Social"
+      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "c3d4",
@@ -767,7 +767,7 @@
       "valor": 86.55,
       "data": "2025-07-06",
       "origem": "SEDE",
-      "categoria": "Ajuda Social"
+      "categoria": "Missões"
     },
     {
       "id": "91de",
@@ -812,7 +812,7 @@
     {
       "id": "91e8",
       "descricao": "energia sede",
-      "valor": 176.01,
+      "valor": 176.05,
       "data": "2025-07-11",
       "origem": "SEDE",
       "categoria": "Energia"
@@ -1037,7 +1037,7 @@
     {
       "id": "d9c7",
       "descricao": "prebenda pastor daniel",
-      "valor": 4395.2,
+      "valor": 5351.62,
       "data": "2025-07-31",
       "origem": "SEDE",
       "categoria": "Prebenda Pastoral"
