@@ -699,6 +699,69 @@
       "valor": 20,
       "data": "2025-08-30",
       "origem": "SEDE"
+    },
+    {
+      "id": "c4f6",
+      "descricao": "amauri",
+      "valor": 158.21,
+      "data": "2025-08-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "29ce",
+      "descricao": "marlene",
+      "valor": 120,
+      "data": "2025-08-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "89e6",
+      "descricao": "josiene",
+      "valor": 60,
+      "data": "2025-08-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "65b3",
+      "descricao": "iris ramos",
+      "valor": 120,
+      "data": "2025-08-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "6c62",
+      "descricao": "auta oliveira",
+      "valor": 1800,
+      "data": "2025-08-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "30b0",
+      "descricao": "dizimos",
+      "valor": 625,
+      "data": "2025-08-31",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "99b0",
+      "descricao": "ofertas",
+      "valor": 189,
+      "data": "2025-08-31",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "341d",
+      "descricao": "ofertas",
+      "valor": 144.2,
+      "data": "2025-08-31",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "b3f8",
+      "descricao": "dizimos",
+      "valor": 671,
+      "data": "2025-08-31",
+      "origem": "Vila Santana"
     }
   ],
   "saidas": [
@@ -1013,6 +1076,38 @@
       "data": "2025-08-29",
       "origem": "SEDE",
       "categoria": "Prebenda Pastoral"
+    },
+    {
+      "id": "046a",
+      "descricao": "zeladora",
+      "valor": 200,
+      "data": "2025-08-31",
+      "origem": "Rio Grande II",
+      "categoria": "Zeladora"
+    },
+    {
+      "id": "35d6",
+      "descricao": "instalação energia",
+      "valor": 100,
+      "data": "2025-08-20",
+      "origem": "Rio Grande II",
+      "categoria": "Energia"
+    },
+    {
+      "id": "572b",
+      "descricao": "instalador da energia",
+      "valor": 100,
+      "data": "2025-08-28",
+      "origem": "Rio Grande II",
+      "categoria": "Outros Gastos"
+    },
+    {
+      "id": "e299",
+      "descricao": "caçamba de areia",
+      "valor": 300,
+      "data": "2025-08-29",
+      "origem": "Rio Grande II",
+      "categoria": "Material de Construção"
     }
   ]
 }
