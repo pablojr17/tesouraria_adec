@@ -752,7 +752,7 @@
     {
       "id": "341d",
       "descricao": "ofertas",
-      "valor": 144.2,
+      "valor": 114.2,
       "data": "2025-08-31",
       "origem": "Vila Santana"
     },
@@ -762,6 +762,83 @@
       "valor": 671,
       "data": "2025-08-31",
       "origem": "Vila Santana"
+    },
+    {
+      "id": "9bdc",
+      "descricao": "GLADJA",
+      "valor": 100,
+      "data": "2025-08-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "eeec",
+      "descricao": "ELZA",
+      "valor": 150,
+      "data": "2025-08-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "abf4",
+      "descricao": "EDINETE",
+      "valor": 50,
+      "data": "2025-08-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "03f6",
+      "descricao": "CLARICE",
+      "valor": 70,
+      "data": "2025-08-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "2f1a",
+      "descricao": "ALGEMIRA",
+      "valor": 150,
+      "data": "2025-08-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "d349",
+      "descricao": "EDIVANIA",
+      "valor": 100,
+      "data": "2025-08-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "2095",
+      "descricao": "ROGERIO",
+      "valor": 50,
+      "data": "2025-08-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "aed5",
+      "descricao": "GILDASIO",
+      "valor": 515,
+      "data": "2025-08-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "761b",
+      "descricao": "NADIELE",
+      "valor": 80,
+      "data": "2025-08-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "53e9",
+      "descricao": "LUCILO",
+      "valor": 100,
+      "data": "2025-08-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "3aad",
+      "descricao": "OFERTAS",
+      "valor": 215,
+      "data": "2025-08-31",
+      "origem": "Jupagua"
     }
   ],
   "saidas": [
@@ -958,6 +1035,14 @@
       "categoria": "Prebenda Pastoral"
     },
     {
+      "id": "2c15",
+      "descricao": "VALE PR DANIEL",
+      "valor": 110,
+      "data": "2025-08-15",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
+    },
+    {
       "id": "2293",
       "descricao": "GASOLINA RIO GRANDE",
       "valor": 50,
@@ -990,20 +1075,28 @@
       "categoria": "Alimentação"
     },
     {
-      "id": "2c15",
-      "descricao": "VALE PR DANIEL",
-      "valor": 110,
-      "data": "2025-08-15",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "e876",
       "descricao": "santa helena",
-      "valor": 228,
+      "valor": 128,
       "data": "2025-08-21",
       "origem": "SEDE",
       "categoria": "Material de Construção"
+    },
+    {
+      "id": "e876",
+      "descricao": "VALE PR DANIEL",
+      "valor": 100,
+      "data": "2025-08-21",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
+    },
+     {
+      "id": "a4d6",
+      "descricao": "VALE PR DANIEL",
+      "valor": 200,
+      "data": "2025-08-24",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "c081",
@@ -1038,6 +1131,14 @@
       "categoria": "Fundo Convencional"
     },
     {
+      "id": "ca56",
+      "descricao": "vale pr daniel",
+      "valor": 600,
+      "data": "2025-08-29",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
+    },
+    {
       "id": "cd65",
       "descricao": "vale pr daniel",
       "valor": 150,
@@ -1066,14 +1167,6 @@
       "descricao": "vale pr daniel",
       "valor": 160,
       "data": "2025-08-31",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
-      "id": "ca56",
-      "descricao": "vale pr daniel",
-      "valor": 600,
-      "data": "2025-08-29",
       "origem": "SEDE",
       "categoria": "Prebenda Pastoral"
     },
@@ -1108,6 +1201,62 @@
       "data": "2025-08-29",
       "origem": "Rio Grande II",
       "categoria": "Material de Construção"
+    },
+    {
+      "id": "6faa",
+      "descricao": "ajuda dirigente",
+      "valor": 57,
+      "data": "2025-08-31",
+      "origem": "Rio Grande II",
+      "categoria": "Prebenda Pastoral"
+    },
+    {
+      "id": "6c0c",
+      "descricao": "energia",
+      "valor": 190.65,
+      "data": "2025-08-31",
+      "origem": "Jupagua",
+      "categoria": "Energia"
+    },
+    {
+      "id": "4a64",
+      "descricao": "AGUA",
+      "valor": 63.98,
+      "data": "2025-08-31",
+      "origem": "Jupagua",
+      "categoria": "Água"
+    },
+    {
+      "id": "1be7",
+      "descricao": "ZELADORA",
+      "valor": 120,
+      "data": "2025-08-31",
+      "origem": "Jupagua",
+      "categoria": "Zeladora"
+    },
+    {
+      "id": "4eda",
+      "descricao": "INTERNET",
+      "valor": 80,
+      "data": "2025-08-20",
+      "origem": "Jupagua",
+      "categoria": "Internet"
+    },
+    {
+      "id": "ae72",
+      "descricao": "ALMOCO BEIRA RIO",
+      "valor": 100,
+      "data": "2025-08-30",
+      "origem": "Jupagua",
+      "categoria": "Alimentação"
+    },
+    {
+      "id": "6e08",
+      "descricao": "VALE PR DANIEL",
+      "valor": 600,
+      "data": "2025-08-31",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
     }
   ]
 }
