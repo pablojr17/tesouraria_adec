@@ -1272,6 +1272,22 @@
       "data": "2025-08-31",
       "origem": "SEDE",
       "categoria": "Prebenda Pastoral"
+    },
+    {
+      "id": "6e08",
+      "descricao": "VALE PR DANIEL",
+      "valor": 500,
+      "data": "2025-08-31",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
+    },
+    {
+      "id": "6e08",
+      "descricao": "10% missões",
+      "valor": 2005,
+      "data": "2025-08-31",
+      "origem": "SEDE",
+      "categoria": "Outros Gastos"
     }
   ]
 }
