@@ -407,13 +407,6 @@
       "origem": "SEDE"
     },
     {
-      "id": "6277",
-      "descricao": "OFERTA CULTO",
-      "valor": 41.3,
-      "data": "2025-08-09",
-      "origem": "SEDE"
-    },
-    {
       "id": "2f42",
       "descricao": "ERICA (MOTO)",
       "valor": 100,
@@ -431,13 +424,6 @@
       "id": "ec34",
       "descricao": "MARIA DO ROSARIO (EBD)",
       "valor": 20,
-      "data": "2025-08-10",
-      "origem": "SEDE"
-    },
-    {
-      "id": "9b1c",
-      "descricao": "OFERTA CULTO",
-      "valor": 44.1,
       "data": "2025-08-10",
       "origem": "SEDE"
     },
@@ -511,17 +497,11 @@
       "data": "2025-08-17",
       "origem": "SEDE"
     },
-    {
-      "id": "0855",
-      "descricao": "oferta culto",
-      "valor": 57.45,
-      "data": "2025-08-17",
-      "origem": "SEDE"
-    },
+
     {
       "id": "9c1d",
       "descricao": "oferta culto",
-      "valor": 10.75,
+      "valor": 8.65,
       "data": "2025-08-20",
       "origem": "SEDE"
     },
@@ -630,7 +610,7 @@
       "data": "2025-08-29",
       "origem": "SEDE"
     },
-     {
+    {
       "id": "df4c",
       "descricao": "DC PABLO",
       "valor": 150,
@@ -759,14 +739,7 @@
     {
       "id": "341d",
       "descricao": "ofertas",
-      "valor": 114.2,
-      "data": "2025-08-31",
-      "origem": "Vila Santana"
-    },
-    {
-      "id": "b3f8",
-      "descricao": "dizimos",
-      "valor": 671,
+      "valor": 259.15,
       "data": "2025-08-31",
       "origem": "Vila Santana"
     },
@@ -846,6 +819,34 @@
       "valor": 215,
       "data": "2025-08-31",
       "origem": "Jupagua"
+    },
+    {
+      "id": "89bf",
+      "descricao": "ACY",
+      "valor": 260,
+      "data": "2025-08-05",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "830f",
+      "descricao": "NEURACY ROMEIRO",
+      "valor": 150,
+      "data": "2025-08-06",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "ced3",
+      "descricao": "RUFINA",
+      "valor": 161,
+      "data": "2025-08-12",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "91ac",
+      "descricao": "IZAIDE",
+      "valor": 100,
+      "data": "2025-08-19",
+      "origem": "Vila Santana"
     }
   ],
   "saidas": [
@@ -1097,7 +1098,7 @@
       "origem": "SEDE",
       "categoria": "Prebenda Pastoral"
     },
-     {
+    {
       "id": "a4d6",
       "descricao": "VALE PR DANIEL",
       "valor": 200,
@@ -1287,6 +1288,30 @@
       "valor": 2005,
       "data": "2025-08-31",
       "origem": "SEDE",
+      "categoria": "Outros Gastos"
+    },
+    {
+      "id": "f0bc",
+      "descricao": "GASOLINA",
+      "valor": 110,
+      "data": "2025-08-25",
+      "origem": "Vila Santana",
+      "categoria": "Combustível"
+    },
+    {
+      "id": "8e84",
+      "descricao": "ZELADORA",
+      "valor": 200,
+      "data": "2025-08-31",
+      "origem": "Vila Santana",
+      "categoria": "Zeladora"
+    },
+    {
+      "id": "c85d",
+      "descricao": "CAIXA DE SOM",
+      "valor": 1854.24,
+      "data": "2025-08-04",
+      "origem": "Vila Santana",
       "categoria": "Outros Gastos"
     }
   ]
