@@ -63,11 +63,9 @@ atualizarSaldo() {
   this.entradasRioGrande2 = somaPorLocal(this.entradas, 'Rio Grande II');
   this.saidasRioGrande2 = somaPorLocal(this.saidas, 'Rio Grande II');
 
-  // Se quiser calcular o saldo geral também, pode somar tudo:
-
   this.totalEntradas = this.entradas.reduce((acc, e) => acc + e.valor, 0);
   this.totalSaidas = this.saidas.reduce((acc, s) => acc + s.valor, 0);
-  this.saldo = (this.totalEntradas + 1409.04) - this.totalSaidas;
+  this.saldo = (this.totalEntradas + 1231.20) - this.totalSaidas;
 }
 
   atualizarSaidas(): void {
