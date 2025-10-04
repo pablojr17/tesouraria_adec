@@ -853,6 +853,14 @@
       "origem": "SEDE",
       "categoria": "Outros Gastos"
     },
+        {
+      "id": "90de",
+      "descricao": "XEROX E IMPRESSÕES",
+      "valor": 68,
+      "data": "2025-09-30",
+      "origem": "SEDE",
+      "categoria": "Outros Gastos"
+    },
     {
       "id": "a3e9",
       "descricao": "AJUDA RAILSON",
