@@ -375,7 +375,7 @@
       "id": "2f2e",
       "descricao": "luiz paulo",
       "valor": 200,
-      "data": "2025-08-29",
+      "data": "2025-09-29",
       "origem": "SEDE"
     },
     {
@@ -777,14 +777,6 @@
       "descricao": "MICROFONE",
       "valor": 119,
       "data": "2025-09-09",
-      "origem": "SEDE",
-      "categoria": "Outros Gastos"
-    },
-    {
-      "id": "67eb",
-      "descricao": "TINTAS RONY",
-      "valor": 65,
-      "data": "2025-09-27",
       "origem": "SEDE",
       "categoria": "Outros Gastos"
     },
