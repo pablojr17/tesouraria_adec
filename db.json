@@ -336,7 +336,7 @@
       "data": "2025-09-26",
       "origem": "SEDE"
     },
-        {
+    {
       "id": "96d1",
       "descricao": "dc pablo",
       "valor": 30,
@@ -783,7 +783,7 @@
     {
       "id": "315d",
       "descricao": "COPOS",
-      "valor": 82.3,
+      "valor": 85.62,
       "data": "2025-09-06",
       "origem": "SEDE",
       "categoria": "Outros Gastos"
@@ -852,37 +852,13 @@
       "origem": "SEDE",
       "categoria": "Outros Gastos"
     },
-        {
+    {
       "id": "90de",
       "descricao": "XEROX E IMPRESSÕES",
       "valor": 68,
       "data": "2025-09-30",
       "origem": "SEDE",
       "categoria": "Outros Gastos"
-    },
-    {
-      "id": "a3e9",
-      "descricao": "AJUDA RAILSON",
-      "valor": 137,
-      "data": "2025-09-30",
-      "origem": "SEDE",
-      "categoria": "Ajuda Social"
-    },
-    {
-      "id": "1cfd",
-      "descricao": "AJUDA CLEONICE",
-      "valor": 70,
-      "data": "2025-09-30",
-      "origem": "SEDE",
-      "categoria": "Ajuda Social"
-    },
-    {
-      "id": "65e8",
-      "descricao": "GASOLINA JUPAGUA",
-      "valor": 200,
-      "data": "2025-09-05",
-      "origem": "SEDE",
-      "categoria": "Combustível"
     },
     {
       "id": "cbdb",
@@ -899,6 +875,22 @@
       "data": "2025-09-18",
       "origem": "SEDE",
       "categoria": "Combustível"
+    },
+    {
+      "id": "49df",
+      "descricao": "material de expediente e consumo",
+      "valor": 352.32,
+      "data": "2025-09-05",
+      "origem": "SEDE",
+      "categoria": "Material de Expediente"
+    },
+    {
+      "id": "04fa",
+      "descricao": "manutenção de veiculo",
+      "valor": 58,
+      "data": "2025-09-27",
+      "origem": "SEDE",
+      "categoria": "Outros Gastos"
     }
   ]
 }
