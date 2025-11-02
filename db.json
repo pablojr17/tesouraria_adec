@@ -538,6 +538,41 @@
       "valor": 123.85,
       "data": "2025-10-31",
       "origem": "Jupagua"
+    },
+    {
+      "id": "9f02",
+      "descricao": "mariete praxedes",
+      "valor": 100,
+      "data": "2025-10-05",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "a001",
+      "descricao": "eidalva",
+      "valor": 100,
+      "data": "2025-10-05",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "411a",
+      "descricao": "justina batista",
+      "valor": 100,
+      "data": "2025-10-30",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "e364",
+      "descricao": "josé antonio",
+      "valor": 220,
+      "data": "2025-10-30",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "a55e",
+      "descricao": "ofertas",
+      "valor": 39,
+      "data": "2025-10-30",
+      "origem": "Rio Grande II"
     }
   ],
   "saidas": [
@@ -548,22 +583,6 @@
       "data": "2025-10-01",
       "origem": "SEDE",
       "categoria": "Outros Gastos"
-    },
-    {
-      "id": "264c",
-      "descricao": "vale pr daniel",
-      "valor": 100,
-      "data": "2025-12-02",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
-      "id": "d3bb",
-      "descricao": "vale pr daniel",
-      "valor": 400,
-      "data": "2025-10-03",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "c391",
@@ -606,14 +625,6 @@
       "categoria": "Outros Gastos"
     },
     {
-      "id": "6e20",
-      "descricao": "vale pr daniel",
-      "valor": 356,
-      "data": "2025-10-07",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "2df9",
       "descricao": "gasolina jupagua",
       "valor": 70,
@@ -646,14 +657,6 @@
       "categoria": "Outros Gastos"
     },
     {
-      "id": "3e29",
-      "descricao": "vale pr daniel",
-      "valor": 650,
-      "data": "2025-10-08",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "ae4d",
       "descricao": "gasolina rio grande",
       "valor": 25,
@@ -684,14 +687,6 @@
       "data": "2025-10-10",
       "origem": "SEDE",
       "categoria": "Material de Expediente"
-    },
-    {
-      "id": "3e93",
-      "descricao": "vale pr daniel",
-      "valor": 250,
-      "data": "2025-10-10",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "53c3",
@@ -766,14 +761,6 @@
       "categoria": "Energia"
     },
     {
-      "id": "fe07",
-      "descricao": "vale pr daniel",
-      "valor": 150,
-      "data": "2025-10-14",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "462b",
       "descricao": "gasolina jupagua",
       "valor": 20,
@@ -782,28 +769,12 @@
       "categoria": "Combustível"
     },
     {
-      "id": "dfb1",
-      "descricao": "vale pr daniel (ministerio fazenda)",
-      "valor": 48.56,
-      "data": "2025-10-15",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "ea45",
       "descricao": "ministerio da fazenda",
       "valor": 100,
       "data": "2025-10-15",
       "origem": "SEDE",
       "categoria": "Outros Gastos"
-    },
-    {
-      "id": "413d",
-      "descricao": "vale pr daniel",
-      "valor": 337.85,
-      "data": "2025-10-17",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "0dc4",
@@ -820,14 +791,6 @@
       "data": "2025-10-17",
       "origem": "SEDE",
       "categoria": "Alimentação"
-    },
-    {
-      "id": "a833",
-      "descricao": "vale pr daniel",
-      "valor": 191.42,
-      "data": "2025-10-16",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "ed46",
@@ -862,14 +825,6 @@
       "categoria": "Internet"
     },
     {
-      "id": "90f8",
-      "descricao": "vale pr daniel",
-      "valor": 1350,
-      "data": "2025-10-19",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "9031",
       "descricao": "gasolina jupagua",
       "valor": 20,
@@ -886,28 +841,12 @@
       "categoria": "Ajuda Social"
     },
     {
-      "id": "b136",
-      "descricao": "vale pr daniel",
-      "valor": 140,
-      "data": "2025-10-24",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "010e",
       "descricao": "copos",
       "valor": 13.8,
       "data": "2025-10-25",
       "origem": "SEDE",
       "categoria": "Outros Gastos"
-    },
-    {
-      "id": "1b62",
-      "descricao": "vale pr daniel (contribuição cleonice pizza)",
-      "valor": 70,
-      "data": "2025-10-28",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "b9fb",
@@ -943,8 +882,8 @@
     },
     {
       "id": "a16d",
-      "descricao": "vale pr daniel",
-      "valor": 400,
+      "descricao": "prebenda pr daniel",
+      "valor": 4443.83,
       "data": "2025-10-31",
       "origem": "SEDE",
       "categoria": "Prebenda Pastoral"
@@ -972,6 +911,30 @@
       "data": "2025-10-31",
       "origem": "Jupagua",
       "categoria": "Água"
+    },
+    {
+      "id": "94bd",
+      "descricao": "zeladora",
+      "valor": 200,
+      "data": "2025-10-30",
+      "origem": "Rio Grande II",
+      "categoria": "Zeladora"
+    },
+    {
+      "id": "1e47",
+      "descricao": "material de limpeza",
+      "valor": 100,
+      "data": "2025-10-30",
+      "origem": "Rio Grande II",
+      "categoria": "Material de Limpeza"
+    },
+    {
+      "id": "c0a7",
+      "descricao": "Dirigente",
+      "valor": 129.5,
+      "data": "2025-10-31",
+      "origem": "Rio Grande II",
+      "categoria": "Prebenda Pastoral"
     }
   ]
 }
