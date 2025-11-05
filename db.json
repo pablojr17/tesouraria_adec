@@ -573,6 +573,62 @@
       "valor": 39,
       "data": "2025-10-30",
       "origem": "Rio Grande II"
+    },
+    {
+      "id": "89d5",
+      "descricao": "valdomiro",
+      "valor": 150,
+      "data": "2025-10-02",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "b3ed",
+      "descricao": "kailquer",
+      "valor": 640,
+      "data": "2025-10-02",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "147b",
+      "descricao": "carmita",
+      "valor": 100,
+      "data": "2025-10-02",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "f08a",
+      "descricao": "rufina",
+      "valor": 191,
+      "data": "2025-10-02",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "b5dc",
+      "descricao": "neuracy",
+      "valor": 150,
+      "data": "2025-10-07",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "fd80",
+      "descricao": "acy",
+      "valor": 260,
+      "data": "2025-10-07",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "3be3",
+      "descricao": "valdemiro",
+      "valor": 150,
+      "data": "2025-10-28",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "6873",
+      "descricao": "ofertas",
+      "valor": 150.8,
+      "data": "2025-10-31",
+      "origem": "Vila Santana"
     }
   ],
   "saidas": [
@@ -883,7 +939,7 @@
     {
       "id": "a16d",
       "descricao": "prebenda pr daniel",
-      "valor": 4443.83,
+      "valor": 4554,
       "data": "2025-10-31",
       "origem": "SEDE",
       "categoria": "Prebenda Pastoral"
@@ -935,6 +991,54 @@
       "data": "2025-10-31",
       "origem": "Rio Grande II",
       "categoria": "Prebenda Pastoral"
+    },
+    {
+      "id": "b248",
+      "descricao": "zelarora",
+      "valor": 200,
+      "data": "2025-10-31",
+      "origem": "Vila Santana",
+      "categoria": "Zeladora"
+    },
+    {
+      "id": "e798",
+      "descricao": "gasolina",
+      "valor": 150,
+      "data": "2025-10-23",
+      "origem": "Vila Santana",
+      "categoria": "Combustível"
+    },
+    {
+      "id": "35c3",
+      "descricao": "forro pvc",
+      "valor": 1250,
+      "data": "2025-10-31",
+      "origem": "Vila Santana",
+      "categoria": "Material de Construção"
+    },
+    {
+      "id": "67a8",
+      "descricao": "agua",
+      "valor": 54.8,
+      "data": "2025-10-16",
+      "origem": "Vila Santana",
+      "categoria": "Água"
+    },
+    {
+      "id": "8bf7",
+      "descricao": "produto de limpeza",
+      "valor": 53,
+      "data": "2025-10-07",
+      "origem": "Vila Santana",
+      "categoria": "Material de Limpeza"
+    },
+    {
+      "id": "8625",
+      "descricao": "10% missões",
+      "valor": 1695,
+      "data": "2025-10-31",
+      "origem": "SEDE",
+      "categoria": "Missões"
     }
   ]
 }
