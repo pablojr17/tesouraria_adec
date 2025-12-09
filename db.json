@@ -737,6 +737,14 @@
       "categoria": "Combustível"
     },
     {
+      "id": "fdgj",
+      "descricao": "pr daniel",
+      "valor": 516.8,
+      "data": "2025-11-10",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
+    },
+    {
       "id": "9b45",
       "descricao": "pr daniel",
       "valor": 455.4,
@@ -747,7 +755,7 @@
     {
       "id": "5b1f",
       "descricao": "pr daniel",
-      "valor": 274.35,
+      "valor": 274.25,
       "data": "2025-11-12",
       "origem": "SEDE",
       "categoria": "Prebenda Pastoral"
@@ -778,11 +786,11 @@
     },
     {
       "id": "6456",
-      "descricao": "conserto pneu",
+      "descricao": "pr daniel",
       "valor": 100,
       "data": "2025-11-14",
       "origem": "SEDE",
-      "categoria": "Outros Gastos"
+      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "db9c",
@@ -806,13 +814,21 @@
       "valor": 200,
       "data": "2025-11-16",
       "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
+      "categoria": "Ajuda Social"
     },
     {
       "id": "7e77",
       "descricao": "pr daniel",
       "valor": 48,
       "data": "2025-11-16",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
+    },
+    {
+      "id": "d825",
+      "descricao": "pr daniel",
+      "valor": 50,
+      "data": "2025-11-17",
       "origem": "SEDE",
       "categoria": "Prebenda Pastoral"
     },
@@ -915,7 +931,7 @@
     {
       "id": "da7d",
       "descricao": "pr daniel",
-      "valor": 1074.25,
+      "valor": 1074.45,
       "data": "2025-11-30",
       "origem": "SEDE",
       "categoria": "Prebenda Pastoral"
