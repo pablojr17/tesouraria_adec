@@ -204,6 +204,13 @@
       "origem": "SEDE"
     },
     {
+      "id": "93f0",
+      "descricao": "dc pablo",
+      "valor": 100,
+      "data": "2025-12-12",
+      "origem": "SEDE"
+    },
+    {
       "id": "014d",
       "descricao": "oferta",
       "valor": 14.75,
@@ -271,6 +278,83 @@
       "descricao": "oferta",
       "valor": 19.15,
       "data": "2025-12-14",
+      "origem": "SEDE"
+    },
+    {
+      "id": "9a56",
+      "descricao": "margarete",
+      "valor": 170,
+      "data": "2025-12-16",
+      "origem": "SEDE"
+    },
+    {
+      "id": "7a8a",
+      "descricao": "viviane vaSCO",
+      "valor": 422,
+      "data": "2025-12-16",
+      "origem": "SEDE"
+    },
+    {
+      "id": "4eb7",
+      "descricao": "VILMA ESCOBAR",
+      "valor": 574,
+      "data": "2025-12-17",
+      "origem": "SEDE"
+    },
+    {
+      "id": "99ca",
+      "descricao": "OFERTA",
+      "valor": 3.05,
+      "data": "2025-12-17",
+      "origem": "SEDE"
+    },
+    {
+      "id": "8e42",
+      "descricao": "REPASSE DE MISSOES",
+      "valor": 1214.5,
+      "data": "2025-12-18",
+      "origem": "SEDE"
+    },
+    {
+      "id": "9257",
+      "descricao": "OFERTA ESPECIAL MILENa",
+      "valor": 1000,
+      "data": "2025-12-18",
+      "origem": "SEDE"
+    },
+    {
+      "id": "cf08",
+      "descricao": "ana claudia",
+      "valor": 220,
+      "data": "2025-12-19",
+      "origem": "SEDE"
+    },
+    {
+      "id": "215d",
+      "descricao": "oferta",
+      "valor": 22,
+      "data": "2025-12-19",
+      "origem": "SEDE"
+    },
+    {
+      "id": "0155",
+      "descricao": "joão santos",
+      "valor": 10,
+      "data": "2025-12-20",
+      "origem": "SEDE"
+    },
+    {
+      "id": "691d",
+      "descricao": "oferta culto",
+      "valor": 20.8,
+      "data": "2025-12-21",
+      "origem": "SEDE"
+    },
+    {
+      "id": "a488",
+      "descricao": "ronykleber",
+      "valor": 258,
+      "data": "2025-12-24",
       "origem": "SEDE"
     }
   ],
@@ -365,7 +449,7 @@
     },
     {
       "id": "8f5a",
-      "descricao": "cantor alvaro",
+      "descricao": "cantor",
       "valor": 100,
       "data": "2025-12-08",
       "origem": "SEDE",
@@ -474,6 +558,118 @@
       "data": "2025-12-15",
       "origem": "SEDE",
       "categoria": "Internet"
+    },
+    {
+      "id": "3609",
+      "descricao": "PR DANIEL",
+      "valor": 200,
+      "data": "2025-12-16",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
+    },
+    {
+      "id": "789f",
+      "descricao": "BEBEDOURO",
+      "valor": 259,
+      "data": "2025-12-17",
+      "origem": "SEDE",
+      "categoria": "Outros Gastos"
+    },
+    {
+      "id": "c87e",
+      "descricao": "FUNDO CONVENCIONAL",
+      "valor": 858.85,
+      "data": "2025-12-17",
+      "origem": "SEDE",
+      "categoria": "Fundo Convencional"
+    },
+    {
+      "id": "73b3",
+      "descricao": "LUZ JUPAGUA",
+      "valor": 356.22,
+      "data": "2025-12-17",
+      "origem": "SEDE",
+      "categoria": "Energia"
+    },
+    {
+      "id": "ed2c",
+      "descricao": "LUZ JUPAGUA",
+      "valor": 124.61,
+      "data": "2025-12-17",
+      "origem": "SEDE",
+      "categoria": "Energia"
+    },
+    {
+      "id": "225b",
+      "descricao": "LUZ CASA PASTORAL",
+      "valor": 490.68,
+      "data": "2025-12-17",
+      "origem": "SEDE",
+      "categoria": "Energia"
+    },
+    {
+      "id": "b8f8",
+      "descricao": "LUZ SEDE",
+      "valor": 186.69,
+      "data": "2025-12-17",
+      "origem": "SEDE",
+      "categoria": "Energia"
+    },
+    {
+      "id": "31d8",
+      "descricao": "pr daniel",
+      "valor": 1260,
+      "data": "2025-12-18",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
+    },
+    {
+      "id": "632d",
+      "descricao": "agua sede",
+      "valor": 125.46,
+      "data": "2025-12-19",
+      "origem": "SEDE",
+      "categoria": "Água"
+    },
+    {
+      "id": "eba0",
+      "descricao": "agua casa pastoral",
+      "valor": 204.44,
+      "data": "2025-12-19",
+      "origem": "SEDE",
+      "categoria": "Água"
+    },
+    {
+      "id": "d0bf",
+      "descricao": "pr daniel",
+      "valor": 300,
+      "data": "2025-12-19",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
+    },
+    {
+      "id": "084f",
+      "descricao": "pr daniel",
+      "valor": 100,
+      "data": "2025-12-21",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
+    },
+    {
+      "id": "14a3",
+      "descricao": "ajuda davi",
+      "valor": 200,
+      "data": "2025-12-22",
+      "origem": "SEDE",
+      "categoria": "Ajuda Social"
+    },
+    {
+      "id": "05cf",
+      "descricao": "pr daniel",
+      "valor": 500,
+      "data": "2025-12-23",
+      "origem": "SEDE",
+      "categoria": "Prebenda Pastoral"
     }
   ]
 }
