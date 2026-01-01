@@ -580,6 +580,20 @@
       "valor": 115.9,
       "data": "2025-12-31",
       "origem": "Vila Santana"
+    },
+    {
+      "id": "f408",
+      "descricao": "amauri",
+      "valor": 210,
+      "data": "2025-12-31",
+      "origem": "SEDE"
+    },
+    {
+      "id": "6122",
+      "descricao": "oferta",
+      "valor": 64.45,
+      "data": "2025-12-31",
+      "origem": "SEDE"
     }
   ],
   "saidas": [
