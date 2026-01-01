@@ -517,6 +517,69 @@
       "valor": 1779.01,
       "data": "2025-12-31",
       "origem": "SEDE"
+    },
+    {
+      "id": "f542",
+      "descricao": "neuracy",
+      "valor": 150,
+      "data": "2025-12-10",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "3421",
+      "descricao": "dc kailquer",
+      "valor": 153,
+      "data": "2025-12-09",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "8b95",
+      "descricao": "acy dos santos",
+      "valor": 270,
+      "data": "2025-12-09",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "4111",
+      "descricao": "rufina de jesus",
+      "valor": 168,
+      "data": "2025-12-09",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "8f10",
+      "descricao": "dc kailquer",
+      "valor": 50,
+      "data": "2025-12-16",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "d217",
+      "descricao": "dc joão romeiro",
+      "valor": 50,
+      "data": "2025-12-23",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "ebb1",
+      "descricao": "carmita",
+      "valor": 90,
+      "data": "2025-12-30",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "c277",
+      "descricao": "valdemiro",
+      "valor": 150,
+      "data": "2025-12-30",
+      "origem": "Vila Santana"
+    },
+    {
+      "id": "f2d3",
+      "descricao": "ofertas",
+      "valor": 115.9,
+      "data": "2025-12-31",
+      "origem": "Vila Santana"
     }
   ],
   "saidas": [
@@ -910,6 +973,30 @@
       "valor": 1779.01,
       "data": "2025-12-31",
       "origem": "SEDE",
+      "categoria": "Outros Gastos"
+    },
+    {
+      "id": "3eeb",
+      "descricao": "zeladora",
+      "valor": 200,
+      "data": "2025-12-31",
+      "origem": "Vila Santana",
+      "categoria": "Zeladora"
+    },
+    {
+      "id": "5dd1",
+      "descricao": "gasolina",
+      "valor": 200,
+      "data": "2025-12-31",
+      "origem": "Vila Santana",
+      "categoria": "Combustível"
+    },
+    {
+      "id": "a475",
+      "descricao": "capina",
+      "valor": 70,
+      "data": "2025-12-31",
+      "origem": "Vila Santana",
       "categoria": "Outros Gastos"
     }
   ]
