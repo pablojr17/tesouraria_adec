@@ -594,6 +594,48 @@
       "valor": 64.45,
       "data": "2025-12-31",
       "origem": "SEDE"
+    },
+    {
+      "id": "b089",
+      "descricao": "dizimos",
+      "valor": 300,
+      "data": "2025-12-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "0962",
+      "descricao": "ofertas",
+      "valor": 271,
+      "data": "2025-12-31",
+      "origem": "Jupagua"
+    },
+    {
+      "id": "3bbe",
+      "descricao": "josé antonio",
+      "valor": 200,
+      "data": "2025-12-21",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "54e2",
+      "descricao": "eridalva praxedes",
+      "valor": 115,
+      "data": "2025-12-14",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "713b",
+      "descricao": "justina batista",
+      "valor": 100,
+      "data": "2025-12-07",
+      "origem": "Rio Grande II"
+    },
+    {
+      "id": "d2b3",
+      "descricao": "ofertas",
+      "valor": 60,
+      "data": "2025-12-31",
+      "origem": "Rio Grande II"
     }
   ],
   "saidas": [
@@ -620,22 +662,6 @@
       "data": "2025-12-05",
       "origem": "SEDE",
       "categoria": "Outros Gastos"
-    },
-    {
-      "id": "d6d8",
-      "descricao": "PR DANIEL",
-      "valor": 259,
-      "data": "2025-12-06",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
-      "id": "21cb",
-      "descricao": "PR DANIEL (carne)",
-      "valor": 132,
-      "data": "2025-12-06",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "a736",
@@ -694,28 +720,12 @@
       "categoria": "Ajuda Social"
     },
     {
-      "id": "b4ad",
-      "descricao": "pr daniel",
-      "valor": 150,
-      "data": "2025-12-09",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "34a0",
       "descricao": "microfone",
       "valor": 119,
       "data": "2025-12-10",
       "origem": "SEDE",
       "categoria": "Outros Gastos"
-    },
-    {
-      "id": "9cac",
-      "descricao": "pr daniel",
-      "valor": 300,
-      "data": "2025-12-10",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "a401",
@@ -734,18 +744,10 @@
       "categoria": "Material de Construção"
     },
     {
-      "id": "12da",
-      "descricao": "pr daniel",
-      "valor": 250,
-      "data": "2025-12-12",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "5746",
       "descricao": "pr daniel",
-      "valor": 60,
-      "data": "2025-12-13",
+      "valor": 6072,
+      "data": "2025-12-31",
       "origem": "SEDE",
       "categoria": "Prebenda Pastoral"
     },
@@ -764,14 +766,6 @@
       "data": "2025-12-13",
       "origem": "SEDE",
       "categoria": "Zeladora"
-    },
-    {
-      "id": "6606",
-      "descricao": "pr daniel",
-      "valor": 270,
-      "data": "2025-12-14",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "8cdd",
@@ -796,14 +790,6 @@
       "data": "2025-12-15",
       "origem": "SEDE",
       "categoria": "Internet"
-    },
-    {
-      "id": "3609",
-      "descricao": "PR DANIEL",
-      "valor": 200,
-      "data": "2025-12-16",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "789f",
@@ -854,14 +840,6 @@
       "categoria": "Energia"
     },
     {
-      "id": "31d8",
-      "descricao": "pr daniel",
-      "valor": 1260,
-      "data": "2025-12-18",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "632d",
       "descricao": "agua sede",
       "valor": 125.46,
@@ -878,22 +856,6 @@
       "categoria": "Água"
     },
     {
-      "id": "d0bf",
-      "descricao": "pr daniel",
-      "valor": 300,
-      "data": "2025-12-19",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
-      "id": "084f",
-      "descricao": "pr daniel",
-      "valor": 100,
-      "data": "2025-12-21",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "14a3",
       "descricao": "ajuda dc. davi",
       "valor": 200,
@@ -902,36 +864,12 @@
       "categoria": "Ajuda Social"
     },
     {
-      "id": "05cf",
-      "descricao": "pr daniel",
-      "valor": 500,
-      "data": "2025-12-23",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "c7c9",
       "descricao": "GRATIFICAÇÃO JUSSIANA",
       "valor": 100,
       "data": "2025-12-24",
       "origem": "SEDE",
       "categoria": "Ajuda Social"
-    },
-    {
-      "id": "bd92",
-      "descricao": "pr daniel",
-      "valor": 300,
-      "data": "2025-12-26",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
-      "id": "24a0",
-      "descricao": "pr daniel",
-      "valor": 803.3,
-      "data": "2025-12-28",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "ca48",
@@ -958,28 +896,12 @@
       "categoria": "Alimentação"
     },
     {
-      "id": "4d83",
-      "descricao": "pr daniel",
-      "valor": 100,
-      "data": "2025-12-30",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
-    },
-    {
       "id": "bf4a",
       "descricao": "carne virada",
       "valor": 200,
       "data": "2025-12-31",
       "origem": "SEDE",
       "categoria": "Alimentação"
-    },
-    {
-      "id": "ceb6",
-      "descricao": "pr daniel",
-      "valor": 1087.7,
-      "data": "2025-12-31",
-      "origem": "SEDE",
-      "categoria": "Prebenda Pastoral"
     },
     {
       "id": "7ad3",
@@ -1011,6 +933,70 @@
       "valor": 70,
       "data": "2025-12-31",
       "origem": "Vila Santana",
+      "categoria": "Outros Gastos"
+    },
+    {
+      "id": "85c8",
+      "descricao": "Agua",
+      "valor": 55.06,
+      "data": "2025-12-13",
+      "origem": "Jupagua",
+      "categoria": "Água"
+    },
+    {
+      "id": "9999",
+      "descricao": "zeladora",
+      "valor": 220,
+      "data": "2025-12-13",
+      "origem": "Jupagua",
+      "categoria": "Zeladora"
+    },
+    {
+      "id": "6f85",
+      "descricao": "limpeza lote",
+      "valor": 40,
+      "data": "2025-12-13",
+      "origem": "Jupagua",
+      "categoria": "Outros Gastos"
+    },
+    {
+      "id": "5aaf",
+      "descricao": "material de limpeza",
+      "valor": 71,
+      "data": "2025-12-13",
+      "origem": "Jupagua",
+      "categoria": "Material de Limpeza"
+    },
+    {
+      "id": "1daf",
+      "descricao": "virada",
+      "valor": 50,
+      "data": "2025-12-31",
+      "origem": "Jupagua",
+      "categoria": "Outros Gastos"
+    },
+    {
+      "id": "1cc0",
+      "descricao": "zeladora",
+      "valor": 200,
+      "data": "2025-12-30",
+      "origem": "Rio Grande II",
+      "categoria": "Zeladora"
+    },
+    {
+      "id": "76f6",
+      "descricao": "limpeza externa",
+      "valor": 200,
+      "data": "2025-12-30",
+      "origem": "Rio Grande II",
+      "categoria": "Outros Gastos"
+    },
+    {
+      "id": "93da",
+      "descricao": "virada",
+      "valor": 75,
+      "data": "2025-12-30",
+      "origem": "Rio Grande II",
       "categoria": "Outros Gastos"
     }
   ]
