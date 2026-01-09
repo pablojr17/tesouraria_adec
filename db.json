@@ -649,25 +649,25 @@
     },
     {
       "id": "b4f6",
-      "descricao": "VIAGEM CONVENÇÃO",
+      "descricao": "hospedagem",
       "valor": 2376,
-      "data": "2025-12-05",
+      "data": "2025-12-08",
       "origem": "SEDE",
       "categoria": "Outros Gastos"
     },
     {
       "id": "7d43",
-      "descricao": "VIAGEM CONVENÇÃO",
+      "descricao": "hospedagem",
       "valor": 1200,
-      "data": "2025-12-05",
+      "data": "2025-12-27",
       "origem": "SEDE",
       "categoria": "Outros Gastos"
     },
     {
       "id": "a736",
       "descricao": "MATERIAL DE LIMPEZA",
-      "valor": 112,
-      "data": "2025-12-06",
+      "valor": 220.55,
+      "data": "2025-12-30",
       "origem": "SEDE",
       "categoria": "Material de Limpeza"
     },
@@ -713,7 +713,7 @@
     },
     {
       "id": "8f5a",
-      "descricao": "cantor alvaro",
+      "descricao": "ação social (cantor alvaro)",
       "valor": 100,
       "data": "2025-12-08",
       "origem": "SEDE",
@@ -737,7 +737,7 @@
     },
     {
       "id": "a6c7",
-      "descricao": "vidros kailquer",
+      "descricao": "conserto janela",
       "valor": 150,
       "data": "2025-12-11",
       "origem": "SEDE",
@@ -752,28 +752,12 @@
       "categoria": "Prebenda Pastoral"
     },
     {
-      "id": "06f9",
-      "descricao": "copos e vinho",
-      "valor": 108.5,
-      "data": "2025-12-13",
-      "origem": "SEDE",
-      "categoria": "Outros Gastos"
-    },
-    {
       "id": "9318",
       "descricao": "zeladora",
       "valor": 200,
       "data": "2025-12-13",
       "origem": "SEDE",
       "categoria": "Zeladora"
-    },
-    {
-      "id": "8cdd",
-      "descricao": "luzimar",
-      "valor": 30,
-      "data": "2025-12-15",
-      "origem": "SEDE",
-      "categoria": "Outros Gastos"
     },
     {
       "id": "7024",
@@ -857,7 +841,7 @@
     },
     {
       "id": "14a3",
-      "descricao": "ajuda dc. davi",
+      "descricao": "ação social (davi)",
       "valor": 200,
       "data": "2025-12-22",
       "origem": "SEDE",
@@ -865,7 +849,7 @@
     },
     {
       "id": "c7c9",
-      "descricao": "GRATIFICAÇÃO JUSSIANA",
+      "descricao": "ação social (JUSSIANA)",
       "valor": 100,
       "data": "2025-12-24",
       "origem": "SEDE",
@@ -875,7 +859,7 @@
       "id": "ca48",
       "descricao": "balões",
       "valor": 59.5,
-      "data": "2025-12-30",
+      "data": "2025-12-31",
       "origem": "SEDE",
       "categoria": "Outros Gastos"
     },
@@ -889,23 +873,23 @@
     },
     {
       "id": "f50f",
-      "descricao": "ajuda rosario",
+      "descricao": "ação social (rosario)",
       "valor": 100,
       "data": "2025-12-30",
       "origem": "SEDE",
-      "categoria": "Alimentação"
+      "categoria": "Ajuda Social"
     },
     {
       "id": "bf4a",
-      "descricao": "carne virada",
-      "valor": 200,
+      "descricao": "despesa virada",
+      "valor": 210,
       "data": "2025-12-31",
       "origem": "SEDE",
-      "categoria": "Alimentação"
+      "categoria": "Ajuda Social"
     },
     {
       "id": "7ad3",
-      "descricao": "gastos convenção",
+      "descricao": "despesas convenção",
       "valor": 1779.01,
       "data": "2025-12-31",
       "origem": "SEDE",
@@ -994,7 +978,7 @@
     {
       "id": "93da",
       "descricao": "virada",
-      "valor": 75,
+      "valor": 105,
       "data": "2025-12-30",
       "origem": "Rio Grande II",
       "categoria": "Outros Gastos"
