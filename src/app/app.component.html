@@ -8,6 +8,22 @@
     <table class="saldo-table">
       <tbody>
         <tr>
+          <td>
+            <b>Presidente:</b> Mazerino Daniel Ramos da Silva
+          </td>
+          <td>
+            <b>Mês: Janeiro</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Tesoureiro:</b> Francisco Carlos Novais de Menezes
+          </td>
+          <td>
+            <b>Ano: 2025</b>
+          </td>
+        </tr>
+        <tr>
           <td>SALDO ANTERIOR:</td>
           <td>
             {{ 2693.66 | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR" }}
@@ -41,12 +57,12 @@
           <td>Jupaguá</td>
           <td>
             {{
-              entradasJupagua | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            entradasJupagua | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
           <td>
             {{
-              saidasJupagua | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            saidasJupagua | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
         </tr>
@@ -54,14 +70,14 @@
           <td>Vila Santana</td>
           <td>
             {{
-              entradasVilaSantana
-                | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            entradasVilaSantana
+            | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
           <td>
             {{
-              saidasVilaSantana
-                | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            saidasVilaSantana
+            | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
         </tr>
@@ -69,13 +85,13 @@
           <td>Rio Grande 2</td>
           <td>
             {{
-              entradasRioGrande2
-                | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            entradasRioGrande2
+            | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
           <td>
             {{
-              saidasRioGrande2 | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            saidasRioGrande2 | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
         </tr>
@@ -83,7 +99,7 @@
           <td><strong>Total mês atual</strong></td>
           <td>
             {{
-              totalEntradas | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            totalEntradas | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
           <td>
@@ -99,8 +115,8 @@
           <td>
             <strong>{{
               totalEntradas + 2693.66
-                | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
-            }}</strong>
+              | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+              }}</strong>
           </td>
         </tr>
 
@@ -109,30 +125,12 @@
           <td>
             <strong>{{
               saldo | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
-            }}</strong>
+              }}</strong>
           </td>
         </tr>
       </tbody>
     </table>
   </header>
-
-  <div class="tab-navigation">
-    <button
-      (click)="selecionarAba('entradas')"
-      [class.active-tab]="abaSelecionada === 'entradas'"
-    >
-      ENTRADAS
-    </button>
-    <button
-      (click)="selecionarAba('saidas')"
-      [class.active-tab]="abaSelecionada === 'saidas'"
-    >
-      SAÍDAS
-    </button>
-  </div>
-
-  <div class="content-area">
-    <app-entradas *ngIf="abaSelecionada === 'entradas'"></app-entradas>
-    <app-saidas *ngIf="abaSelecionada === 'saidas'"></app-saidas>
-  </div>
+<app-lancamentos-table></app-lancamentos-table>
+<app-lancamentos></app-lancamentos>
 </div>

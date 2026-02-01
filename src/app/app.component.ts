@@ -6,11 +6,13 @@ import { SaidasComponent } from './components/saidas/saidas.component';
 import { CommonModule } from '@angular/common';
 import { entradas, saidas } from '../../db.json'
 import { Lancamento } from './model/lancamento.model';
+import { LancamentosComponent } from './components/lancamentos/lancamentos.component';
+import { LancamentosTableComponent } from './components/lancamentos-table/lancamentos-table.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, EntradasComponent, SaidasComponent, CommonModule, ],
+  imports: [RouterOutlet, EntradasComponent, SaidasComponent, CommonModule, LancamentosComponent, LancamentosTableComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

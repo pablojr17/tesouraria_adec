@@ -1,0 +1,130 @@
+<div class="container">
+  <div class="input-section">
+    <h2>{{ form.value.tipo === 'ENTRADA' ? 'Entradas' : 'Saídas' }}</h2>
+
+    <form [formGroup]="form" (ngSubmit)="salvar()">
+      <!-- Tipo -->
+      <div class="input-group">
+        <select formControlName="tipo">
+          <option value="ENTRADA">Entrada</option>
+          <option value="SAIDA">Saída</option>
+        </select>
+      </div>
+
+      <!-- Descrição -->
+      <div class="input-group">
+        <input type="text" formControlName="descricao" placeholder="Descrição" />
+      </div>
+
+      <!-- Valor -->
+      <div class="input-group">
+        <input type="number" formControlName="valor" placeholder="Valor" />
+      </div>
+
+      <!-- Data + Origem -->
+      <div
+        class="input-group"
+        style="display: flex; gap: 8px; justify-content: center"
+      >
+        <input type="date" formControlName="data" />
+
+        <select formControlName="origem">
+          <option value="" disabled>Selecione a origem</option>
+          <option value="SEDE">SEDE</option>
+          <option value="Vila Santana">Vila Santana</option>
+          <option value="Rio Grande II">Rio Grande II</option>
+          <option value="Jupagua">Jupagua</option>
+        </select>
+      </div>
+
+      <div *ngIf="form.value.tipo === 'ENTRADA'" class="input-group">
+  <select formControlName="natureza_entrada">
+    <option value="" disabled>Selecione</option>
+    <option value="DIZIMO">Dízimo</option>
+    <option value="OFERTA">Oferta</option>
+  </select>
+</div>
+
+
+      <!-- CAMPOS SÓ DE SAÍDA -->
+      <div *ngIf="form.value.tipo === 'SAIDA'">
+        <div class="input-group">
+          <select formControlName="categoria">
+            <option value="" disabled>Selecione a categoria</option>
+            <option value="Alimentação">Alimentação</option>
+            <option value="Energia">Energia</option>
+            <option value="Água">Água</option>
+            <option value="Internet">Internet</option>
+            <option value="Missões">Missões</option>
+            <option value="Prebenda Pastoral">Prebenda Pastoral</option>
+            <option value="Fundo Convencional">Fundo Convencional</option>
+            <option value="Material de Construção">Material de Construção</option>
+            <option value="Zeladora">Zeladora</option>
+            <option value="Ajuda Social">Ajuda Social</option>
+            <option value="Outros Gastos">Outros Gastos</option>
+            <option value="Combustível">Combustível</option>
+            <option value="Material de Limpeza">Material de Limpeza</option>
+            <option value="Material de Expediente">Material de Expediente</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <input
+            type="text"
+            formControlName="grupo"
+            placeholder="Grupo (opcional)"
+          />
+        </div>
+
+        <div class="input-group">
+          <input
+            type="text"
+            formControlName="numero_nota"
+            placeholder="Número da nota"
+          />
+        </div>
+      </div>
+
+      <button type="submit" [disabled]="form.invalid">
+        Salvar
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="entries-section">
+  <h2>Histórico</h2>
+
+  <table class="entries-table">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Tipo</th>
+        <th>Descrição</th>
+        <th>Origem</th>
+        <th>Categoria</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let l of lancamentos">
+        <td>{{ l.data | date : 'dd/MM/yyyy' }}</td>
+        <td>{{ l.tipo }}</td>
+        <td>{{ l.descricao?.toUpperCase() }}</td>
+        <td>{{ l.origem }}</td>
+        <td>{{ l.categoria || '-' }}</td>
+        <td
+          [ngClass]="
+            l.tipo === 'ENTRADA' ? 'income-value' : 'expense-value'
+          "
+        >
+          {{
+            l.valor | currency : 'BRL' : 'symbol' : '1.2-2' : 'pt-BR'
+          }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
