@@ -1,78 +1,236 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LancamentoService } from './service/lancamento.service';
-import { EntradasComponent } from './components/entradas/entradas.component';
-import { SaidasComponent } from './components/saidas/saidas.component';
 import { CommonModule } from '@angular/common';
-import { entradas, saidas } from '../../db.json'
-import { Lancamento } from './model/lancamento.model';
+import { FormsModule } from '@angular/forms';
+
 import { LancamentosComponent } from './components/lancamentos/lancamentos.component';
 import { LancamentosTableComponent } from './components/lancamentos-table/lancamentos-table.component';
+import { LancamentosService } from './service/lancamentos.service';
+import { LancamentoSup } from './model/lancamento.model';
+
+interface MesOption {
+  label: string;
+  mes: number; // 0-11
+  ano: number;
+}
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, EntradasComponent, SaidasComponent, CommonModule, LancamentosComponent, LancamentosTableComponent ],
+  imports: [
+    RouterOutlet,
+    CommonModule,
+    FormsModule,
+    LancamentosComponent,
+    LancamentosTableComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
-export class AppComponent {
-    abaSelecionada = 'entradas';
-  saldo: number = 0;
-entradas: Lancamento[] = []; // seus dados de entrada
-saidas: Lancamento[] = [];   // seus dados de saída
-totalEntradas = 0;
-totalSaidas = 0;
-entradasSede = 0;
-saidasSede = 0;
+export class AppComponent implements OnInit {
+  /** ============================
+   * CONTROLE DE MÊS
+   * ============================ */
+  meses: MesOption[] = [
+    { label: 'Janeiro / 2026', mes: 0, ano: 2026 },
+    { label: 'Fevereiro / 2026', mes: 1, ano: 2026 },
+    { label: 'Março / 2026', mes: 2, ano: 2026 },
+    { label: 'Abril / 2026', mes: 3, ano: 2026 },
+    { label: 'Maio / 2026', mes: 4, ano: 2026 },
+    { label: 'Junho / 2026', mes: 5, ano: 2026 },
+    { label: 'Julho / 2026', mes: 6, ano: 2026 },
+    { label: 'Agosto / 2026', mes: 7, ano: 2026 },
+    { label: 'Setembro / 2026', mes: 8, ano: 2026 },
+    { label: 'Outubro / 2026', mes: 9, ano: 2026 },
+    { label: 'Novembro / 2026', mes: 10, ano: 2026 },
+    { label: 'Dezembro / 2026', mes: 11, ano: 2026 },
+  ];
 
-entradasJupagua = 0;
-saidasJupagua = 0;
+  mesSelecionado!: MesOption;
 
-entradasVilaSantana = 0;
-saidasVilaSantana = 0;
+  /** ============================
+   * RESUMO FINANCEIRO
+   * ============================ */
+  entradasSede = 0;
+  saidasSede = 0;
 
-entradasRioGrande2 = 0;
-saidasRioGrande2 = 0;
-  constructor(private service: LancamentoService) {}
+  entradasJupagua = 0;
+  saidasJupagua = 0;
 
-  ngOnInit(): void {
-    this.atualizarSaidas()
-    this.atualizarSaldo();
+  entradasVilaSantana = 0;
+  saidasVilaSantana = 0;
+
+  entradasRioGrande2 = 0;
+  saidasRioGrande2 = 0;
+
+  totalEntradas = 0;
+  totalSaidas = 0;
+
+  saldoAnterior = 0;
+  saldo = 0;
+
+  constructor(private lancamentoService: LancamentosService) {}
+
+  async ngOnInit() {
+    const hoje = new Date();
+
+    this.mesSelecionado =
+      this.meses.find(
+        m => m.mes === hoje.getMonth() && m.ano === hoje.getFullYear()
+      ) || this.meses[0];
+
+    await this.atualizarTudo();
   }
 
-  selecionarAba(aba: string) {
-    this.abaSelecionada = aba;
-    this.atualizarSaldo(); // opcional: se quiser recalcular ao trocar abas
+  /** ============================
+   * TROCA DE MÊS
+   * ============================ */
+  async onMesChange() {
+    await this.atualizarTudo();
   }
 
-atualizarSaldo() {
-  // Função auxiliar para somar valores por local
-  const somaPorLocal = (lancamentos: Lancamento[], local: string) =>
-    lancamentos
-      .filter(l => l.origem === local)
-      .reduce((acc, l) => acc + l.valor, 0);
+  private async atualizarTudo() {
+    await this.carregarSaldoAnterior();
+    await this.carregarDadosMesAtual();
+  }
 
-  this.entradasSede = somaPorLocal(this.entradas, 'SEDE');
-  this.saidasSede = somaPorLocal(this.saidas, 'SEDE');
+  /** ============================
+   * MÊS ATUAL
+   * ============================ */
+  private async carregarDadosMesAtual() {
+    const inicio = new Date(
+      this.mesSelecionado.ano,
+      this.mesSelecionado.mes,
+      1
+    ).toISOString().split('T')[0];
 
-  this.entradasJupagua = somaPorLocal(this.entradas, 'Jupagua');
-  this.saidasJupagua = somaPorLocal(this.saidas, 'Jupagua');
+    const fim = new Date(
+      this.mesSelecionado.ano,
+      this.mesSelecionado.mes + 1,
+      0
+    ).toISOString().split('T')[0];
 
-  this.entradasVilaSantana = somaPorLocal(this.entradas, 'Vila Santana');
-  this.saidasVilaSantana = somaPorLocal(this.saidas, 'Vila Santana');
+    const lancamentos =
+      await this.lancamentoService.buscarLancamentosPorPeriodo(inicio, fim);
 
-  this.entradasRioGrande2 = somaPorLocal(this.entradas, 'Rio Grande II');
-  this.saidasRioGrande2 = somaPorLocal(this.saidas, 'Rio Grande II');
+    this.calcularResumo(lancamentos);
+  }
 
-  this.totalEntradas = this.entradas.reduce((acc, e) => acc + e.valor, 0);
-  this.totalSaidas = this.saidas.reduce((acc, s) => acc + s.valor, 0);
-  this.saldo = (this.totalEntradas + 2693.66) - this.totalSaidas;
+  /** ============================
+   * SALDO ANTERIOR
+   * ============================ */
+  private async carregarSaldoAnterior() {
+    const inicio = new Date(
+      this.mesSelecionado.ano,
+      this.mesSelecionado.mes - 1,
+      1
+    ).toISOString().split('T')[0];
+
+    const fim = new Date(
+      this.mesSelecionado.ano,
+      this.mesSelecionado.mes,
+      0
+    ).toISOString().split('T')[0];
+
+    const lancamentos =
+      await this.lancamentoService.buscarLancamentosPorPeriodo(inicio, fim);
+
+    let entradas = 0;
+    let saidas = 0;
+
+    lancamentos.forEach(l => {
+      if (l.tipo === 'ENTRADA') entradas += Number(l.valor);
+      if (l.tipo === 'SAIDA') saidas += Number(l.valor);
+    });
+
+    this.saldoAnterior = entradas - saidas;
+  }
+
+  /** ============================
+   * REDUCE CENTRAL
+   * ============================ */
+private normalizarOrigem(origem?: string): string {
+  if (!origem) return 'DESCONHECIDA';
+
+  return origem
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, '')
+    .replace(/[^a-zA-Z]/g, '')
+    .toUpperCase();
 }
 
-  atualizarSaidas(): void {
-    this.saidas = saidas;
-    this.entradas = entradas;
+
+private calcularResumo(lancamentos: LancamentoSup[]) {
+
+  const resumo = lancamentos.reduce((acc, l) => {
+    const valor = Number(l.valor) || 0;
+    if(l.origem) {}
+    const origem = this.normalizarOrigem(l.origem);
+
+    if (l.tipo === 'ENTRADA') {
+      acc.totalEntradas += valor;
+      acc.entradas[origem] = (acc.entradas[origem] || 0) + valor;
+    }
+
+    if (l.tipo === 'SAIDA') {
+      acc.totalSaidas += valor;
+      acc.saidas[origem] = (acc.saidas[origem] || 0) + valor;
+    }
+
+    return acc;
+  }, {
+    totalEntradas: 0,
+    totalSaidas: 0,
+    entradas: {},
+    saidas: {}
+  } as {
+    totalEntradas: number;
+    totalSaidas: number;
+    entradas: Record<string, number>;
+    saidas: Record<string, number>;
+  });
+
+  /* ===== ATRIBUIÇÕES ===== */
+
+this.entradasSede = resumo.entradas['SEDE'] ?? 0;
+this.saidasSede   = resumo.saidas['SEDE'] ?? 0;
+
+this.entradasJupagua = resumo.entradas['JUPAGUA'] ?? 0;
+this.saidasJupagua   = resumo.saidas['JUPAGUA'] ?? 0;
+
+this.entradasVilaSantana = resumo.entradas['VILASANTANA'] ?? 0;
+this.saidasVilaSantana   = resumo.saidas['VILASANTANA'] ?? 0;
+
+this.entradasRioGrande2 = resumo.entradas['RIOGRANDEII'] ?? 0;
+this.saidasRioGrande2   = resumo.saidas['RIOGRANDEII'] ?? 0;
+
+
+  this.totalEntradas = resumo.totalEntradas;
+  this.totalSaidas = resumo.totalSaidas;
+
+  this.saldo = this.totalEntradas + this.saldoAnterior - this.totalSaidas;
+}
+
+
+  get totalComSaldoAnterior() {
+    return this.totalEntradas + this.saldoAnterior;
   }
+
+  get dataInicioMes() {
+  return new Date(
+    this.mesSelecionado.ano,
+    this.mesSelecionado.mes,
+    1
+  ).toISOString().split('T')[0];
+}
+
+get dataFimMes() {
+  return new Date(
+    this.mesSelecionado.ano,
+    this.mesSelecionado.mes + 1,
+    0
+  ).toISOString().split('T')[0];
+}
 
 }

@@ -4,31 +4,44 @@
       <h2 class="titulo-relatorio">ASSEMBLEIA DE DEUS - COTEGIPE</h2>
       <div class="logo"></div>
     </div>
-    <h3 style="font-size: 1em;">RELATÓRIO FINANCEIRO DEZEMBRO DE 2025</h3>
+    <h3 style="font-size: 1em;">RELATÓRIO FINANCEIRO {{mesSelecionado.label}}</h3>
+<select [(ngModel)]="mesSelecionado" (ngModelChange)="onMesChange()">
+  <option *ngFor="let m of meses" [ngValue]="m">
+    {{ m.label }}
+  </option>
+</select>
+
+
     <table class="saldo-table">
       <tbody>
         <tr>
           <td>
             <b>Presidente:</b> Mazerino Daniel Ramos da Silva
           </td>
-          <td>
-            <b>Mês: Janeiro</b>
-          </td>
+         
         </tr>
         <tr>
           <td>
             <b>Tesoureiro:</b> Francisco Carlos Novais de Menezes
           </td>
-          <td>
-            <b>Ano: 2025</b>
-          </td>
         </tr>
+        
+
+      </tbody>
+    </table>
+
+        <table class="saldo-table">
+      <tbody>
+        
         <tr>
-          <td>SALDO ANTERIOR:</td>
-          <td>
-            {{ 2693.66 | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR" }}
-          </td>
-        </tr>
+  <td><strong>SALDO ANTERIOR</strong></td>
+  <td>
+    <strong>
+      {{ saldoAnterior | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+    </strong>
+  </td>
+</tr>
+
       </tbody>
     </table>
 
@@ -114,7 +127,7 @@
           <td><strong>TOTAL MÊS + SALDO ANTERIOR:</strong></td>
           <td>
             <strong>{{
-              totalEntradas + 2693.66
+              totalComSaldoAnterior
               | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
               }}</strong>
           </td>
@@ -131,6 +144,13 @@
       </tbody>
     </table>
   </header>
-<app-lancamentos-table></app-lancamentos-table>
-<app-lancamentos></app-lancamentos>
-</div>
+  </div>
+<app-lancamentos-table
+  [dataInicio]="dataInicioMes"
+  [dataFim]="dataFimMes">
+</app-lancamentos-table>
+
+<app-lancamentos
+[dataInicio]="dataInicioMes"
+  [dataFim]="dataFimMes"
+></app-lancamentos>

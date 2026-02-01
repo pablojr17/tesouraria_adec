@@ -1,6 +1,6 @@
 <div class="container">
   <div class="input-section">
-    <h2>{{ form.value.tipo === 'ENTRADA' ? 'Entradas' : 'Saídas' }}</h2>
+    <h2 class="grupo-titulo">{{ form.value.tipo === 'ENTRADA' ? 'Entradas' : 'Saídas' }}</h2>
 
     <form [formGroup]="form" (ngSubmit)="salvar()">
       <!-- Tipo -->
@@ -76,6 +76,14 @@
           />
         </div>
 
+         <div class="input-group">
+          <input
+            type="text"
+            formControlName="cpf_cnpj"
+            placeholder="CPF/CNPJ"
+          />
+        </div>
+
         <div class="input-group">
           <input
             type="text"
@@ -93,38 +101,94 @@
 </div>
 
 <div class="entries-section">
-  <h2>Histórico</h2>
+  <h2 class="grupo-titulo">Entradas</h2>
 
   <table class="entries-table">
     <thead>
       <tr>
         <th>Data</th>
-        <th>Tipo</th>
         <th>Descrição</th>
         <th>Origem</th>
-        <th>Categoria</th>
+        <th>Tipo</th>
         <th>Valor</th>
       </tr>
     </thead>
 
     <tbody>
-      <tr *ngFor="let l of lancamentos">
-        <td>{{ l.data | date : 'dd/MM/yyyy' }}</td>
-        <td>{{ l.tipo }}</td>
+      <tr *ngFor="let l of entradas">
+        <td>{{ l.data | date:'dd/MM/yyyy' }}</td>
         <td>{{ l.descricao?.toUpperCase() }}</td>
         <td>{{ l.origem }}</td>
-        <td>{{ l.categoria || '-' }}</td>
-        <td
-          [ngClass]="
-            l.tipo === 'ENTRADA' ? 'income-value' : 'expense-value'
-          "
-        >
-          {{
-            l.valor | currency : 'BRL' : 'symbol' : '1.2-2' : 'pt-BR'
-          }}
+        <td>{{ l.natureza_entrada }}</td>
+        <td class="income-value">
+          {{ l.valor | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
         </td>
       </tr>
     </tbody>
   </table>
+</div>
+
+<div class="entries-section" style="margin-top: 24px;">
+  <h2 class="grupo-titulo">Saídas</h2>
+
+  <!-- filtros -->
+  <div class="filters">
+    <select [(ngModel)]="filtroCategoria">
+      <option value="">Categoria</option>
+      <option value="Água">Água</option>
+      <option value="Energia">Energia</option>
+      <option value="Internet">Internet</option>
+    </select>
+
+    <select [(ngModel)]="filtroGrupo">
+      <option value="">Grupo</option>
+      <option value="Administração">Administração</option>
+      <option value="Missões">Missões</option>
+      <option value="Obra">Obra</option>
+    </select>
+
+    <select [(ngModel)]="filtroOrigem">
+      <option value="">Origem</option>
+      <option value="SEDE">Sede</option>
+      <option value="Jupaguá">Jupaguá</option>
+      <option value="Vila Santana">Vila Santana</option>
+    </select>
+  </div>
+
+  <!-- agrupamento -->
+  <ng-container *ngFor="let grupo of saidasAgrupadasPorGrupo">
+    <h3 class="grupo-titulo">Grupo {{ grupo[0] }}</h3>
+
+    <table class="entries-table">
+      <thead>
+        <tr>
+          <th>Descrição</th>
+          <th>Data</th>
+          <th>Numero da nota</th>
+          <th>CPF/CNPJ</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let l of grupo[1]">
+          <td>{{ l.descricao?.toUpperCase() }}</td>
+          <td>{{ l.data | date:'dd/MM/yyyy' }}</td>
+          <td>{{ l.numero_nota }}</td>
+          <td>{{ l.cpf_cnpj }}</td>
+          <td class="expense-value">
+            {{ l.valor | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </td>
+        </tr>
+
+        <tr class="total-grupo">
+          <td colspan="4"><strong>Total do grupo</strong></td>
+          <td class="expense-value">
+            {{ getTotalGrupo(grupo[1]) | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </ng-container>
 </div>
 

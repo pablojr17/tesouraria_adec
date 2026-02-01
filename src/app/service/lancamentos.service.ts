@@ -34,4 +34,56 @@ export class LancamentosService {
     if (error) throw error;
     return data;
   }
+
+  async buscarLancamentosPorPeriodo(
+    inicio: string,
+    fim: string
+  ): Promise<LancamentoSup[]> {
+    const { data, error } = await this.supabase.client
+      .from('lancamentos')
+      .select('*')
+      .gte('data', inicio)
+      .lte('data', fim);
+
+    if (error) {
+      console.error('Erro ao buscar lançamentos:', error);
+      throw error;
+    }
+
+    return data as LancamentoSup[];
+  }
+
+  async buscarEntradasPorPeriodo(inicio: string, fim: string) {
+  const { data, error } = await this.supabase.client
+    .from('lancamentos')
+    .select('*')
+    .eq('tipo', 'ENTRADA')
+    .gte('data', inicio)
+    .lte('data', fim)
+    .order('data');
+
+  if (error) {
+    console.error(error);
+    return [];
+  }
+
+  return data;
+}
+
+async buscarPorPeriodo(
+  inicio: string,
+  fim: string
+): Promise<LancamentoSup[]> {
+  const { data, error } = await this.supabase.client
+    .from('lancamentos')
+    .select('*')
+    .gte('data', inicio)
+    .lte('data', fim)
+    .order('data', { ascending: true });
+
+  if (error) throw error;
+  return data as LancamentoSup[];
+}
+
+
 }

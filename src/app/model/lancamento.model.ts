@@ -19,6 +19,7 @@ export interface LancamentoSup {
   categoria?: string | null;
   grupo?: string | null;
   numero_nota?: string | null;
+  cpf_cnpj?: string | null;
 
   created_at?: string | null;
 }

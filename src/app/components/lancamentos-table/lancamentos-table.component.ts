@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { LancamentosService } from '../../service/lancamentos.service';
+import { Component, Input, OnChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LancamentosService } from '../../service/lancamentos.service';
 import { LancamentoSup } from '../../model/lancamento.model';
-
 
 interface LinhaRelatorio {
   data: string;
@@ -14,84 +13,60 @@ interface LinhaRelatorio {
 @Component({
   selector: 'app-lancamentos-table',
   standalone: true,
-  imports: [CommonModule ],
+  imports: [CommonModule],
   templateUrl: './lancamentos-table.component.html',
   styleUrls: ['./lancamentos-table.component.scss'],
 })
-export class LancamentosTableComponent implements OnInit {
+export class LancamentosTableComponent implements OnChanges {
+  @Input() dataInicio!: string;
+  @Input() dataFim!: string;
+
   relatorio: LinhaRelatorio[] = [];
 
   constructor(private service: LancamentosService) {}
 
-async ngOnInit() {
-  const lancamentos = await this.service.buscarEntradas();
-  this.relatorio = this.gerarRelatorioPorData(lancamentos);
-}
+  async ngOnChanges() {
+    if (!this.dataInicio || !this.dataFim) return;
 
+    const lancamentos =
+      await this.service.buscarEntradasPorPeriodo(
+        this.dataInicio,
+        this.dataFim
+      );
 
-  montarRelatorio(lancamentos: any[]) {
-    const mapa = new Map<string, LinhaRelatorio>();
-
-    for (const l of lancamentos) {
-      const data = l.data;
-
-      if (!mapa.has(data)) {
-        mapa.set(data, {
-          data,
-          dizimos: 0,
-          ofertas: 0,
-          total: 0,
-        });
-      }
-
-      const linha = mapa.get(data)!;
-
-      if (l.subtipo === 'DIZIMO') {
-        linha.dizimos += l.valor;
-      }
-
-      if (l.subtipo === 'OFERTA') {
-        linha.ofertas += l.valor;
-      }
-
-      linha.total = linha.dizimos + linha.ofertas;
-    }
-
-    this.relatorio = Array.from(mapa.values());
+    this.relatorio = this.gerarRelatorioPorData(lancamentos);
   }
 
-get totalReceitas() {
-  return this.relatorio.reduce((sum, r) => sum + r.total, 0);
-}
+  gerarRelatorioPorData(lancamentos: LancamentoSup[]): LinhaRelatorio[] {
+    return Object.values(
+      lancamentos.reduce((acc, item) => {
+        const data = item.data;
 
+        if (!acc[data]) {
+          acc[data] = {
+            data,
+            dizimos: 0,
+            ofertas: 0,
+            total: 0,
+          };
+        }
 
-  gerarRelatorioPorData(lancamentos: LancamentoSup[]) {
-  return Object.values(
-    lancamentos.reduce((acc, item) => {
-      const data = item.data;
+        if (item.natureza_entrada === 'DIZIMO') {
+          acc[data].dizimos += Number(item.valor);
+        }
 
-      if (!acc[data]) {
-        acc[data] = {
-          data,
-          dizimos: 0,
-          ofertas: 0,
-          total: 0,
-        };
-      }
+        if (item.natureza_entrada === 'OFERTA') {
+          acc[data].ofertas += Number(item.valor);
+        }
 
-      if (item.natureza_entrada === 'DIZIMO') {
-        acc[data].dizimos += item.valor;
-      }
+        acc[data].total = acc[data].dizimos + acc[data].ofertas;
 
-      if (item.natureza_entrada === 'OFERTA') {
-        acc[data].ofertas += item.valor;
-      }
+        return acc;
+      }, {} as Record<string, LinhaRelatorio>)
+    );
+  }
 
-      acc[data].total = acc[data].dizimos + acc[data].ofertas;
-
-      return acc;
-    }, {} as Record<string, any>)
-  );
-}
-
+  get totalReceitas() {
+    return this.relatorio.reduce((sum, r) => sum + r.total, 0);
+  }
 }
