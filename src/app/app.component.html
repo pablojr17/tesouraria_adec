@@ -4,44 +4,15 @@
       <h2 class="titulo-relatorio">ASSEMBLEIA DE DEUS - COTEGIPE</h2>
       <div class="logo"></div>
     </div>
-    <h3 style="font-size: 1em;">RELATÓRIO FINANCEIRO {{mesSelecionado.label}}</h3>
-<select [(ngModel)]="mesSelecionado" (ngModelChange)="onMesChange()">
-  <option *ngFor="let m of meses" [ngValue]="m">
-    {{ m.label }}
-  </option>
-</select>
-
-
+    <h3 style="font-size: 1em;">RELATÓRIO FINANCEIRO DEZEMBRO DE 2025</h3>
     <table class="saldo-table">
       <tbody>
         <tr>
+          <td>SALDO ANTERIOR:</td>
           <td>
-            <b>Presidente:</b> Mazerino Daniel Ramos da Silva
-          </td>
-         
-        </tr>
-        <tr>
-          <td>
-            <b>Tesoureiro:</b> Francisco Carlos Novais de Menezes
+            {{ 2770.12 | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR" }}
           </td>
         </tr>
-        
-
-      </tbody>
-    </table>
-
-        <table class="saldo-table">
-      <tbody>
-        
-        <tr>
-  <td><strong>SALDO ANTERIOR</strong></td>
-  <td>
-    <strong>
-      {{ saldoAnterior | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
-    </strong>
-  </td>
-</tr>
-
       </tbody>
     </table>
 
@@ -70,12 +41,12 @@
           <td>Jupaguá</td>
           <td>
             {{
-            entradasJupagua | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+              entradasJupagua | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
           <td>
             {{
-            saidasJupagua | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+              saidasJupagua | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
         </tr>
@@ -83,14 +54,14 @@
           <td>Vila Santana</td>
           <td>
             {{
-            entradasVilaSantana
-            | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+              entradasVilaSantana
+                | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
           <td>
             {{
-            saidasVilaSantana
-            | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+              saidasVilaSantana
+                | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
         </tr>
@@ -98,13 +69,13 @@
           <td>Rio Grande 2</td>
           <td>
             {{
-            entradasRioGrande2
-            | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+              entradasRioGrande2
+                | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
           <td>
             {{
-            saidasRioGrande2 | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+              saidasRioGrande2 | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
         </tr>
@@ -112,7 +83,7 @@
           <td><strong>Total mês atual</strong></td>
           <td>
             {{
-            totalEntradas | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+              totalEntradas | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
             }}
           </td>
           <td>
@@ -127,9 +98,9 @@
           <td><strong>TOTAL MÊS + SALDO ANTERIOR:</strong></td>
           <td>
             <strong>{{
-              totalComSaldoAnterior
-              | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
-              }}</strong>
+              totalEntradas + 2770.12
+                | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
+            }}</strong>
           </td>
         </tr>
 
@@ -138,19 +109,30 @@
           <td>
             <strong>{{
               saldo | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR"
-              }}</strong>
+            }}</strong>
           </td>
         </tr>
       </tbody>
     </table>
   </header>
-  </div>
-<app-lancamentos-table
-  [dataInicio]="dataInicioMes"
-  [dataFim]="dataFimMes">
-</app-lancamentos-table>
 
-<app-lancamentos
-[dataInicio]="dataInicioMes"
-  [dataFim]="dataFimMes"
-></app-lancamentos>
+  <div class="tab-navigation">
+    <button
+      (click)="selecionarAba('entradas')"
+      [class.active-tab]="abaSelecionada === 'entradas'"
+    >
+      ENTRADAS
+    </button>
+    <button
+      (click)="selecionarAba('saidas')"
+      [class.active-tab]="abaSelecionada === 'saidas'"
+    >
+      SAÍDAS
+    </button>
+  </div>
+
+  <div class="content-area">
+    <app-entradas *ngIf="abaSelecionada === 'entradas'"></app-entradas>
+    <app-saidas *ngIf="abaSelecionada === 'saidas'"></app-saidas>
+  </div>
+</div>
